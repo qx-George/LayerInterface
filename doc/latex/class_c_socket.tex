@@ -1,0 +1,172 @@
+\hypertarget{class_c_socket}{}\section{C\+Socket类 参考}
+\label{class_c_socket}\index{C\+Socket@{C\+Socket}}
+\subsection*{Public 类型}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_c_socket_a1612592be6a8334d298c6e289b7d4ac7}\label{class_c_socket_a1612592be6a8334d298c6e289b7d4ac7}} 
+enum {\bfseries S\+O\+C\+K\+\_\+\+P\+R\+O\+TO} \{ {\bfseries S\+T\+R\+E\+AM} = 1, 
+{\bfseries D\+G\+R\+AM} = 2, 
+{\bfseries R\+AW} = 3
+ \}
+\item 
+\mbox{\Hypertarget{class_c_socket_a9f5168b936eacaffc83a9ba3200ec00b}\label{class_c_socket_a9f5168b936eacaffc83a9ba3200ec00b}} 
+enum {\bfseries Proto} \{ {\bfseries T\+CP}, 
+{\bfseries U\+DP}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{class_c_socket_abc15c93dfbf879f5dacc8b4b5dd951b1}{socket} (int domain, int type, int protocol)
+\begin{DoxyCompactList}\small\item\em 用于创建一个socket描述符，它唯一标识一个socket \end{DoxyCompactList}\item 
+int \hyperlink{class_c_socket_a498e08712781a360f2cb2279bd1151c4}{bind} (int socket\+Id, std\+::string IP, unsigned short int port)
+\begin{DoxyCompactList}\small\item\em 服务器绑定\+I\+P与端口号 \end{DoxyCompactList}\item 
+int \hyperlink{class_c_socket_acfbd568b041bb6ac35c5fc862aee28f1}{listen} (int socket\+Id, int link\+Size)
+\begin{DoxyCompactList}\small\item\em 服务器端监听 \end{DoxyCompactList}\item 
+int \hyperlink{class_c_socket_a7c54f8c3c1fef6dd1c84c105e99ddbb1}{connect} (int socket\+Id, std\+::string IP, unsigned short int port)
+\begin{DoxyCompactList}\small\item\em 客户端请求链接\+I\+P与端口号 \end{DoxyCompactList}\item 
+int \hyperlink{class_c_socket_aaf0c338bcac7bbb4b9a4e57f62c7e7df}{accept} (int socket\+Id, std\+::string \&IP, unsigned short int \&port)
+\begin{DoxyCompactList}\small\item\em 服务器同意链接 \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_c_socket_aafbbf6818bd94b8fda58b8a7ee8417c3}\label{class_c_socket_aafbbf6818bd94b8fda58b8a7ee8417c3}} 
+int \hyperlink{class_c_socket_aafbbf6818bd94b8fda58b8a7ee8417c3}{recv} (int socket\+Id, char $\ast$\&msg, int \&length)
+\begin{DoxyCompactList}\small\item\em 发送与接收 \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_c_socket_ab034dd0ed69981237cc8385a6786d5ab}\label{class_c_socket_ab034dd0ed69981237cc8385a6786d5ab}} 
+int {\bfseries send} (int socket\+Id, char $\ast$msg, int length)
+\item 
+int \hyperlink{class_c_socket_a1af720c8b15569d9f8f6abd91bc1bfe7}{close} (int socket\+Id)
+\begin{DoxyCompactList}\small\item\em 关闭连接 \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{成员函数说明}
+\mbox{\Hypertarget{class_c_socket_aaf0c338bcac7bbb4b9a4e57f62c7e7df}\label{class_c_socket_aaf0c338bcac7bbb4b9a4e57f62c7e7df}} 
+\index{C\+Socket@{C\+Socket}!accept@{accept}}
+\index{accept@{accept}!C\+Socket@{C\+Socket}}
+\subsubsection{\texorpdfstring{accept()}{accept()}}
+{\footnotesize\ttfamily int C\+Socket\+::accept (\begin{DoxyParamCaption}\item[{int}]{socket\+Id,  }\item[{std\+::string \&}]{IP,  }\item[{unsigned short int \&}]{port }\end{DoxyParamCaption})}
+
+
+
+服务器同意链接 
+
+
+\begin{DoxyParams}[1]{参数}
+\mbox{\tt in}  & {\em socket\+Id} & \+: socket描述符 \\
+\hline
+\mbox{\tt in}  & {\em I\+P：客户端网络地址} & \\
+\hline
+\mbox{\tt in}  & {\em port：客户端端口号} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+socket描述符 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_socket_a498e08712781a360f2cb2279bd1151c4}\label{class_c_socket_a498e08712781a360f2cb2279bd1151c4}} 
+\index{C\+Socket@{C\+Socket}!bind@{bind}}
+\index{bind@{bind}!C\+Socket@{C\+Socket}}
+\subsubsection{\texorpdfstring{bind()}{bind()}}
+{\footnotesize\ttfamily int C\+Socket\+::bind (\begin{DoxyParamCaption}\item[{int}]{socket\+Id,  }\item[{std\+::string}]{IP,  }\item[{unsigned short int}]{port }\end{DoxyParamCaption})}
+
+
+
+服务器绑定\+I\+P与端口号 
+
+
+\begin{DoxyParams}[1]{参数}
+\mbox{\tt in}  & {\em socket\+Id} & \+: socket描述符 \\
+\hline
+\mbox{\tt in}  & {\em I\+P：网络地址} & \\
+\hline
+\mbox{\tt in}  & {\em port：端口号} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+错误码 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_socket_a1af720c8b15569d9f8f6abd91bc1bfe7}\label{class_c_socket_a1af720c8b15569d9f8f6abd91bc1bfe7}} 
+\index{C\+Socket@{C\+Socket}!close@{close}}
+\index{close@{close}!C\+Socket@{C\+Socket}}
+\subsubsection{\texorpdfstring{close()}{close()}}
+{\footnotesize\ttfamily int C\+Socket\+::close (\begin{DoxyParamCaption}\item[{int}]{socket\+Id }\end{DoxyParamCaption})}
+
+
+
+关闭连接 
+
+
+\begin{DoxyParams}[1]{参数}
+\mbox{\tt in}  & {\em socket\+Id} & \+: socket描述符 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+socket描述符 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_socket_a7c54f8c3c1fef6dd1c84c105e99ddbb1}\label{class_c_socket_a7c54f8c3c1fef6dd1c84c105e99ddbb1}} 
+\index{C\+Socket@{C\+Socket}!connect@{connect}}
+\index{connect@{connect}!C\+Socket@{C\+Socket}}
+\subsubsection{\texorpdfstring{connect()}{connect()}}
+{\footnotesize\ttfamily int C\+Socket\+::connect (\begin{DoxyParamCaption}\item[{int}]{socket\+Id,  }\item[{std\+::string}]{IP,  }\item[{unsigned short int}]{port }\end{DoxyParamCaption})}
+
+
+
+客户端请求链接\+I\+P与端口号 
+
+
+\begin{DoxyParams}[1]{参数}
+\mbox{\tt in}  & {\em socket\+Id} & \+: socket描述符 \\
+\hline
+\mbox{\tt in}  & {\em I\+P：网络地址} & \\
+\hline
+\mbox{\tt in}  & {\em port：端口号} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+错误码 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_socket_acfbd568b041bb6ac35c5fc862aee28f1}\label{class_c_socket_acfbd568b041bb6ac35c5fc862aee28f1}} 
+\index{C\+Socket@{C\+Socket}!listen@{listen}}
+\index{listen@{listen}!C\+Socket@{C\+Socket}}
+\subsubsection{\texorpdfstring{listen()}{listen()}}
+{\footnotesize\ttfamily int C\+Socket\+::listen (\begin{DoxyParamCaption}\item[{int}]{socket\+Id,  }\item[{int}]{link\+Size }\end{DoxyParamCaption})}
+
+
+
+服务器端监听 
+
+
+\begin{DoxyParams}[1]{参数}
+\mbox{\tt in}  & {\em socket\+Id} & \+: socket描述符 \\
+\hline
+\mbox{\tt in}  & {\em link\+Size} & \+: socket可以排队的最大连接个数 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+错误码 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_socket_abc15c93dfbf879f5dacc8b4b5dd951b1}\label{class_c_socket_abc15c93dfbf879f5dacc8b4b5dd951b1}} 
+\index{C\+Socket@{C\+Socket}!socket@{socket}}
+\index{socket@{socket}!C\+Socket@{C\+Socket}}
+\subsubsection{\texorpdfstring{socket()}{socket()}}
+{\footnotesize\ttfamily int C\+Socket\+::socket (\begin{DoxyParamCaption}\item[{int}]{domain,  }\item[{int}]{type,  }\item[{int}]{protocol }\end{DoxyParamCaption})}
+
+
+
+用于创建一个socket描述符，它唯一标识一个socket 
+
+
+\begin{DoxyParams}[1]{参数}
+\mbox{\tt in}  & {\em domain：即协议域，又称为协议族} & \\
+\hline
+\mbox{\tt in}  & {\em type：指定socket类型} & \\
+\hline
+\mbox{\tt in}  & {\em protocol：指定协议} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+socket标识符 
+\end{DoxyReturn}
+
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+G\+:/华中科技大学/计卓1401/大三下/计算机网络/\+Layer\+Interface/\+Socket/Socket.\+h\item 
+G\+:/华中科技大学/计卓1401/大三下/计算机网络/\+Layer\+Interface/\+Socket/Socket.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,87 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Internet Protocol Stack: G:/华中科技大学/计卓1401/大三下/计算机网络/LayerInterface/Socket/Socket.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Internet Protocol Stack
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_917b423456edc1f7d09b8f6979f8704a.html">Socket</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">Socket.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &quot;NetConn.h&quot;</span></div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;MailSlot.h&quot;</span></div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;</div><div class="line"><a name="l00006"></a><span class="lineno"><a class="line" href="class_c_socket.html">    6</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_c_socket.html">CSocket</a></div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;{</div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">public</span>:</div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;    <a class="code" href="class_c_socket.html">CSocket</a>();</div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_c_socket.html#abc15c93dfbf879f5dacc8b4b5dd951b1">socket</a>(<span class="keywordtype">int</span> domain, <span class="keywordtype">int</span> type, <span class="keywordtype">int</span> protocol);</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_c_socket.html#a498e08712781a360f2cb2279bd1151c4">bind</a>(<span class="keywordtype">int</span> socketId, std::string IP, <span class="keywordtype">unsigned</span> <span class="keywordtype">short</span> <span class="keywordtype">int</span> port);</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_c_socket.html#acfbd568b041bb6ac35c5fc862aee28f1">listen</a>(<span class="keywordtype">int</span> socketId, <span class="keywordtype">int</span> linkSize);</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_c_socket.html#a7c54f8c3c1fef6dd1c84c105e99ddbb1">connect</a>(<span class="keywordtype">int</span> socketId, std::string IP, <span class="keywordtype">unsigned</span> <span class="keywordtype">short</span> <span class="keywordtype">int</span> port);</div><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_c_socket.html#aaf0c338bcac7bbb4b9a4e57f62c7e7df">accept</a>(<span class="keywordtype">int</span> socketId, std::string &amp;IP, <span class="keywordtype">unsigned</span> <span class="keywordtype">short</span> <span class="keywordtype">int</span> &amp;port);</div><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_c_socket.html#aafbbf6818bd94b8fda58b8a7ee8417c3">recv</a>(<span class="keywordtype">int</span> socketId, <span class="keywordtype">char</span> * &amp;msg, <span class="keywordtype">int</span> &amp;length);</div><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keywordtype">int</span> send(<span class="keywordtype">int</span> socketId, <span class="keywordtype">char</span> * msg, <span class="keywordtype">int</span> length);</div><div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div><div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_c_socket.html#a1af720c8b15569d9f8f6abd91bc1bfe7">close</a>(<span class="keywordtype">int</span> socketId);</div><div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;</div><div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="comment">/* Socket protocol types (TCP/UDP/RAW) */</span></div><div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;</div><div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="keyword">enum</span> SOCK_PROTO</div><div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    {</div><div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        STREAM = 1,</div><div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        DGRAM = 2,</div><div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        RAW = 3</div><div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    };</div><div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;</div><div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <span class="keyword">enum</span> Proto</div><div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    {</div><div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        TCP, UDP</div><div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    };</div><div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;</div><div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="keyword">private</span>:</div><div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <a class="code" href="class_c_net_conn.html">CNetConn</a> conn;</div><div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <a class="code" href="class_c_mail_slot.html">CMailSlot</a> _mailSlot, _linkSlot;</div><div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;};</div><div class="ttc" id="class_c_socket_html_abc15c93dfbf879f5dacc8b4b5dd951b1"><div class="ttname"><a href="class_c_socket.html#abc15c93dfbf879f5dacc8b4b5dd951b1">CSocket::socket</a></div><div class="ttdeci">int socket(int domain, int type, int protocol)</div><div class="ttdoc">用于创建一个socket描述符，它唯一标识一个socket </div><div class="ttdef"><b>Definition:</b> Socket.cpp:14</div></div>
+<div class="ttc" id="class_c_socket_html"><div class="ttname"><a href="class_c_socket.html">CSocket</a></div><div class="ttdef"><b>Definition:</b> Socket.h:6</div></div>
+<div class="ttc" id="class_c_mail_slot_html"><div class="ttname"><a href="class_c_mail_slot.html">CMailSlot</a></div><div class="ttdef"><b>Definition:</b> MailSlot.h:17</div></div>
+<div class="ttc" id="class_c_net_conn_html"><div class="ttname"><a href="class_c_net_conn.html">CNetConn</a></div><div class="ttdef"><b>Definition:</b> NetConn.h:13</div></div>
+<div class="ttc" id="class_c_socket_html_a1af720c8b15569d9f8f6abd91bc1bfe7"><div class="ttname"><a href="class_c_socket.html#a1af720c8b15569d9f8f6abd91bc1bfe7">CSocket::close</a></div><div class="ttdeci">int close(int socketId)</div><div class="ttdoc">关闭连接 </div><div class="ttdef"><b>Definition:</b> Socket.cpp:79</div></div>
+<div class="ttc" id="class_c_socket_html_aaf0c338bcac7bbb4b9a4e57f62c7e7df"><div class="ttname"><a href="class_c_socket.html#aaf0c338bcac7bbb4b9a4e57f62c7e7df">CSocket::accept</a></div><div class="ttdeci">int accept(int socketId, std::string &amp;IP, unsigned short int &amp;port)</div><div class="ttdoc">服务器同意链接 </div><div class="ttdef"><b>Definition:</b> Socket.cpp:58</div></div>
+<div class="ttc" id="class_c_socket_html_aafbbf6818bd94b8fda58b8a7ee8417c3"><div class="ttname"><a href="class_c_socket.html#aafbbf6818bd94b8fda58b8a7ee8417c3">CSocket::recv</a></div><div class="ttdeci">int recv(int socketId, char *&amp;msg, int &amp;length)</div><div class="ttdoc">发送与接收 </div><div class="ttdef"><b>Definition:</b> Socket.cpp:63</div></div>
+<div class="ttc" id="class_c_socket_html_a7c54f8c3c1fef6dd1c84c105e99ddbb1"><div class="ttname"><a href="class_c_socket.html#a7c54f8c3c1fef6dd1c84c105e99ddbb1">CSocket::connect</a></div><div class="ttdeci">int connect(int socketId, std::string IP, unsigned short int port)</div><div class="ttdoc">客户端请求链接IP与端口号 </div><div class="ttdef"><b>Definition:</b> Socket.cpp:42</div></div>
+<div class="ttc" id="class_c_socket_html_acfbd568b041bb6ac35c5fc862aee28f1"><div class="ttname"><a href="class_c_socket.html#acfbd568b041bb6ac35c5fc862aee28f1">CSocket::listen</a></div><div class="ttdeci">int listen(int socketId, int linkSize)</div><div class="ttdoc">服务器端监听 </div><div class="ttdef"><b>Definition:</b> Socket.cpp:53</div></div>
+<div class="ttc" id="class_c_socket_html_a498e08712781a360f2cb2279bd1151c4"><div class="ttname"><a href="class_c_socket.html#a498e08712781a360f2cb2279bd1151c4">CSocket::bind</a></div><div class="ttdeci">int bind(int socketId, std::string IP, unsigned short int port)</div><div class="ttdoc">服务器绑定IP与端口号 </div><div class="ttdef"><b>Definition:</b> Socket.cpp:30</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

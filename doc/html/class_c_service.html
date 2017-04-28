@@ -1,0 +1,368 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Internet Protocol Stack: CService类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Internet Protocol Stack
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-types">Public 类型</a> &#124;
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="class_c_service-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">CService类 参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public 类型</h2></td></tr>
+<tr class="memitem:abd1684d960aef251b1d74edf372c5d1b"><td class="memItemLeft" align="right" valign="top"><a id="abd1684d960aef251b1d74edf372c5d1b"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>SOCK_PROTO</b> { <b>STREAM</b> = 1, 
+<b>DGRAM</b> = 2, 
+<b>RAW</b> = 3
+ }</td></tr>
+<tr class="separator:abd1684d960aef251b1d74edf372c5d1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a43fb60063bc9f9b0f4e3eeb1787056b0"><td class="memItemLeft" align="right" valign="top"><a id="a43fb60063bc9f9b0f4e3eeb1787056b0"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>Proto</b> { <b>TCP</b>, 
+<b>UDP</b>
+ }</td></tr>
+<tr class="separator:a43fb60063bc9f9b0f4e3eeb1787056b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:ae632f34f3aceab829b89ee46374658f2"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_service.html#ae632f34f3aceab829b89ee46374658f2">socket</a> (int domain, int type, int protocol)</td></tr>
+<tr class="memdesc:ae632f34f3aceab829b89ee46374658f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">用于创建一个socket描述符，它唯一标识一个socket  <a href="#ae632f34f3aceab829b89ee46374658f2">更多...</a><br /></td></tr>
+<tr class="separator:ae632f34f3aceab829b89ee46374658f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab345d03f1f85d053472b05de3ea211eb"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_service.html#ab345d03f1f85d053472b05de3ea211eb">bind</a> (int socketId, std::string IP, unsigned short int port)</td></tr>
+<tr class="memdesc:ab345d03f1f85d053472b05de3ea211eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">服务器绑定IP与端口号  <a href="#ab345d03f1f85d053472b05de3ea211eb">更多...</a><br /></td></tr>
+<tr class="separator:ab345d03f1f85d053472b05de3ea211eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a32f59bebc1aef849f38b72218a87c674"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_service.html#a32f59bebc1aef849f38b72218a87c674">listen</a> (int socketId, int linkSize)</td></tr>
+<tr class="memdesc:a32f59bebc1aef849f38b72218a87c674"><td class="mdescLeft">&#160;</td><td class="mdescRight">服务器端监听  <a href="#a32f59bebc1aef849f38b72218a87c674">更多...</a><br /></td></tr>
+<tr class="separator:a32f59bebc1aef849f38b72218a87c674"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4788fc741e72baeaa5e15e459494f661"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_service.html#a4788fc741e72baeaa5e15e459494f661">connect</a> (int socketId, std::string IP, unsigned short int port)</td></tr>
+<tr class="memdesc:a4788fc741e72baeaa5e15e459494f661"><td class="mdescLeft">&#160;</td><td class="mdescRight">客户端请求链接IP与端口号  <a href="#a4788fc741e72baeaa5e15e459494f661">更多...</a><br /></td></tr>
+<tr class="separator:a4788fc741e72baeaa5e15e459494f661"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a694c7ac8c230b0d1d11bc98a32abcd71"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_service.html#a694c7ac8c230b0d1d11bc98a32abcd71">accept</a> (int socketId, std::string &amp;IP, unsigned short int &amp;port)</td></tr>
+<tr class="memdesc:a694c7ac8c230b0d1d11bc98a32abcd71"><td class="mdescLeft">&#160;</td><td class="mdescRight">服务器同意链接  <a href="#a694c7ac8c230b0d1d11bc98a32abcd71">更多...</a><br /></td></tr>
+<tr class="separator:a694c7ac8c230b0d1d11bc98a32abcd71"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a221d063aa8a89ecc84084e1bbd287210"><td class="memItemLeft" align="right" valign="top"><a id="a221d063aa8a89ecc84084e1bbd287210"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_service.html#a221d063aa8a89ecc84084e1bbd287210">recv</a> (int socketId, char *&amp;msg, int &amp;length)</td></tr>
+<tr class="memdesc:a221d063aa8a89ecc84084e1bbd287210"><td class="mdescLeft">&#160;</td><td class="mdescRight">发送与接收 <br /></td></tr>
+<tr class="separator:a221d063aa8a89ecc84084e1bbd287210"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a883e80cc5ea699e8408bbffe7c18414b"><td class="memItemLeft" align="right" valign="top"><a id="a883e80cc5ea699e8408bbffe7c18414b"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>send</b> (int socketId, char *msg, int length)</td></tr>
+<tr class="separator:a883e80cc5ea699e8408bbffe7c18414b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abb0357bf57a735cc27f0e667d7e21787"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_service.html#abb0357bf57a735cc27f0e667d7e21787">close</a> (int socketId)</td></tr>
+<tr class="memdesc:abb0357bf57a735cc27f0e667d7e21787"><td class="mdescLeft">&#160;</td><td class="mdescRight">关闭连接  <a href="#abb0357bf57a735cc27f0e667d7e21787">更多...</a><br /></td></tr>
+<tr class="separator:abb0357bf57a735cc27f0e667d7e21787"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">成员函数说明</h2>
+<a id="a694c7ac8c230b0d1d11bc98a32abcd71"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a694c7ac8c230b0d1d11bc98a32abcd71">&#9670;&nbsp;</a></span>accept()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int CService::accept </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>socketId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string &amp;&#160;</td>
+          <td class="paramname"><em>IP</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned short int &amp;&#160;</td>
+          <td class="paramname"><em>port</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>服务器同意链接 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">socketId</td><td>: socket描述符 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">IP：客户端网络地址</td><td></td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">port：客户端端口号</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>socket描述符 </dd></dl>
+
+</div>
+</div>
+<a id="ab345d03f1f85d053472b05de3ea211eb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab345d03f1f85d053472b05de3ea211eb">&#9670;&nbsp;</a></span>bind()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int CService::bind </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>socketId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>IP</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned short int&#160;</td>
+          <td class="paramname"><em>port</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>服务器绑定IP与端口号 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">socketId</td><td>: socket描述符 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">IP：网络地址</td><td></td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">port：端口号</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>错误码 </dd></dl>
+
+</div>
+</div>
+<a id="abb0357bf57a735cc27f0e667d7e21787"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abb0357bf57a735cc27f0e667d7e21787">&#9670;&nbsp;</a></span>close()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int CService::close </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>socketId</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>关闭连接 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">socketId</td><td>: socket描述符 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>socket描述符 </dd></dl>
+
+</div>
+</div>
+<a id="a4788fc741e72baeaa5e15e459494f661"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4788fc741e72baeaa5e15e459494f661">&#9670;&nbsp;</a></span>connect()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int CService::connect </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>socketId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>IP</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned short int&#160;</td>
+          <td class="paramname"><em>port</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>客户端请求链接IP与端口号 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">socketId</td><td>: socket描述符 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">IP：网络地址</td><td></td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">port：端口号</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>错误码 </dd></dl>
+
+</div>
+</div>
+<a id="a32f59bebc1aef849f38b72218a87c674"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a32f59bebc1aef849f38b72218a87c674">&#9670;&nbsp;</a></span>listen()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int CService::listen </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>socketId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>linkSize</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>服务器端监听 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">socketId</td><td>: socket描述符 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">linkSize</td><td>: socket可以排队的最大连接个数 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>错误码 </dd></dl>
+
+</div>
+</div>
+<a id="ae632f34f3aceab829b89ee46374658f2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae632f34f3aceab829b89ee46374658f2">&#9670;&nbsp;</a></span>socket()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int CService::socket </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>domain</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>protocol</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>用于创建一个socket描述符，它唯一标识一个socket </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">domain：即协议域，又称为协议族</td><td></td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">type：指定socket类型</td><td></td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">protocol：指定协议</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>socket标识符 </dd></dl>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>G:/华中科技大学/计卓1401/大三下/计算机网络/LayerInterface/Service/<a class="el" href="_service_8h_source.html">Service.h</a></li>
+<li>G:/华中科技大学/计卓1401/大三下/计算机网络/LayerInterface/Service/Service.cpp</li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

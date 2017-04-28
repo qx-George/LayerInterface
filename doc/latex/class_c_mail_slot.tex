@@ -1,0 +1,94 @@
+\hypertarget{class_c_mail_slot}{}\section{C\+Mail\+Slot类 参考}
+\label{class_c_mail_slot}\index{C\+Mail\+Slot@{C\+Mail\+Slot}}
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{class_c_mail_slot_abdbc8ae85a1ae1f7c7998c43b1422535}{create\+Mail\+Slot} (int id)
+\begin{DoxyCompactList}\small\item\em 创建邮件槽 \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_c_mail_slot_a23a09f6261450e62570ee1314c62eb97}\label{class_c_mail_slot_a23a09f6261450e62570ee1314c62eb97}} 
+bool {\bfseries open} (int id)
+\item 
+\mbox{\Hypertarget{class_c_mail_slot_afc370072c2ab921ba66c55d1509262ad}\label{class_c_mail_slot_afc370072c2ab921ba66c55d1509262ad}} 
+bool {\bfseries close} ()
+\item 
+\mbox{\Hypertarget{class_c_mail_slot_a8eb1b3b7bd937365ca865d76e25a4941}\label{class_c_mail_slot_a8eb1b3b7bd937365ca865d76e25a4941}} 
+bool {\bfseries read} (\hyperlink{class_c_net_conn}{C\+Net\+Conn} \&conn)
+\item 
+\mbox{\Hypertarget{class_c_mail_slot_a17b53bd1601b38ba99bac0dda7ac0794}\label{class_c_mail_slot_a17b53bd1601b38ba99bac0dda7ac0794}} 
+bool {\bfseries read} (char $\ast$\&msg, int \&length)
+\item 
+\mbox{\Hypertarget{class_c_mail_slot_a5eb6d0ece129a9c023cd058f45653427}\label{class_c_mail_slot_a5eb6d0ece129a9c023cd058f45653427}} 
+bool {\bfseries write} (const \hyperlink{class_c_net_conn}{C\+Net\+Conn} \&conn)
+\item 
+\mbox{\Hypertarget{class_c_mail_slot_add3c2a84d9d2e588f23e009c08c0ca2d}\label{class_c_mail_slot_add3c2a84d9d2e588f23e009c08c0ca2d}} 
+bool {\bfseries write} (const char $\ast$msg, const int length)
+\item 
+bool \hyperlink{class_c_mail_slot_abdbc8ae85a1ae1f7c7998c43b1422535}{create\+Mail\+Slot} (int id)
+\begin{DoxyCompactList}\small\item\em 创建邮件槽 \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_c_mail_slot_a23a09f6261450e62570ee1314c62eb97}\label{class_c_mail_slot_a23a09f6261450e62570ee1314c62eb97}} 
+bool {\bfseries open} (int id)
+\item 
+\mbox{\Hypertarget{class_c_mail_slot_afc370072c2ab921ba66c55d1509262ad}\label{class_c_mail_slot_afc370072c2ab921ba66c55d1509262ad}} 
+bool {\bfseries close} ()
+\item 
+\mbox{\Hypertarget{class_c_mail_slot_a8eb1b3b7bd937365ca865d76e25a4941}\label{class_c_mail_slot_a8eb1b3b7bd937365ca865d76e25a4941}} 
+bool {\bfseries read} (\hyperlink{class_c_net_conn}{C\+Net\+Conn} \&conn)
+\item 
+\mbox{\Hypertarget{class_c_mail_slot_a17b53bd1601b38ba99bac0dda7ac0794}\label{class_c_mail_slot_a17b53bd1601b38ba99bac0dda7ac0794}} 
+bool {\bfseries read} (char $\ast$\&msg, int \&length)
+\item 
+\mbox{\Hypertarget{class_c_mail_slot_a5eb6d0ece129a9c023cd058f45653427}\label{class_c_mail_slot_a5eb6d0ece129a9c023cd058f45653427}} 
+bool {\bfseries write} (const \hyperlink{class_c_net_conn}{C\+Net\+Conn} \&conn)
+\item 
+\mbox{\Hypertarget{class_c_mail_slot_add3c2a84d9d2e588f23e009c08c0ca2d}\label{class_c_mail_slot_add3c2a84d9d2e588f23e009c08c0ca2d}} 
+bool {\bfseries write} (const char $\ast$msg, const int length)
+\end{DoxyCompactItemize}
+\subsection*{Public 属性}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_c_mail_slot_a4e3521651dae10b64456ad61b2612009}\label{class_c_mail_slot_a4e3521651dae10b64456ad61b2612009}} 
+std\+::string {\bfseries last\+Err}
+\end{DoxyCompactItemize}
+
+
+\subsection{成员函数说明}
+\mbox{\Hypertarget{class_c_mail_slot_abdbc8ae85a1ae1f7c7998c43b1422535}\label{class_c_mail_slot_abdbc8ae85a1ae1f7c7998c43b1422535}} 
+\index{C\+Mail\+Slot@{C\+Mail\+Slot}!create\+Mail\+Slot@{create\+Mail\+Slot}}
+\index{create\+Mail\+Slot@{create\+Mail\+Slot}!C\+Mail\+Slot@{C\+Mail\+Slot}}
+\subsubsection{\texorpdfstring{create\+Mail\+Slot()}{createMailSlot()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily bool C\+Mail\+Slot\+::create\+Mail\+Slot (\begin{DoxyParamCaption}\item[{int}]{id }\end{DoxyParamCaption})}
+
+
+
+创建邮件槽 
+
+
+\begin{DoxyParams}[1]{参数}
+\mbox{\tt in}  & {\em slot\+Name} & 邮件槽名字 \\
+\hline
+\mbox{\tt in}  & {\em socket\+Id} & socket号 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_c_mail_slot_abdbc8ae85a1ae1f7c7998c43b1422535}\label{class_c_mail_slot_abdbc8ae85a1ae1f7c7998c43b1422535}} 
+\index{C\+Mail\+Slot@{C\+Mail\+Slot}!create\+Mail\+Slot@{create\+Mail\+Slot}}
+\index{create\+Mail\+Slot@{create\+Mail\+Slot}!C\+Mail\+Slot@{C\+Mail\+Slot}}
+\subsubsection{\texorpdfstring{create\+Mail\+Slot()}{createMailSlot()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily bool C\+Mail\+Slot\+::create\+Mail\+Slot (\begin{DoxyParamCaption}\item[{int}]{id }\end{DoxyParamCaption})}
+
+
+
+创建邮件槽 
+
+
+\begin{DoxyParams}[1]{参数}
+\mbox{\tt in}  & {\em slot\+Name} & 邮件槽名字 \\
+\hline
+\mbox{\tt in}  & {\em socket\+Id} & socket号 \\
+\hline
+\end{DoxyParams}
+
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+G\+:/华中科技大学/计卓1401/大三下/计算机网络/\+Layer\+Interface/\+Layer\+Interface/Mail\+Slot.\+h\item 
+G\+:/华中科技大学/计卓1401/大三下/计算机网络/\+Layer\+Interface/\+Layer\+Interface/Mail\+Slot.\+cpp\end{DoxyCompactItemize}

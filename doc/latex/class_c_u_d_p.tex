@@ -1,0 +1,71 @@
+\hypertarget{class_c_u_d_p}{}\section{C\+U\+D\+P类 参考}
+\label{class_c_u_d_p}\index{C\+U\+DP@{C\+U\+DP}}
+类 C\+U\+DP 继承关系图\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_c_u_d_p}
+\end{center}
+\end{figure}
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_c_u_d_p_a2eed7862494fbdc41005e5f536d2f74f}\label{class_c_u_d_p_a2eed7862494fbdc41005e5f536d2f74f}} 
+{\bfseries C\+U\+DP} (\hyperlink{class_msg_list}{Msg\+List} \&send\+Buf, \hyperlink{class_msg_list}{Msg\+List} \&rcv\+Buf)
+\item 
+\mbox{\Hypertarget{class_c_u_d_p_af595428bc531576d9859a9e0b84d03d9}\label{class_c_u_d_p_af595428bc531576d9859a9e0b84d03d9}} 
+bool {\bfseries is\+Buffer\+Ready} (int lable)
+\item 
+\mbox{\Hypertarget{class_c_u_d_p_a1f6e555ad4997b283e68ebfa7dc0d263}\label{class_c_u_d_p_a1f6e555ad4997b283e68ebfa7dc0d263}} 
+bool {\bfseries send\+Data} (\hyperlink{class_datagram}{Datagram} datagram)
+\item 
+\mbox{\Hypertarget{class_c_u_d_p_aa71e49c760769b55dc2251b244eb00ff}\label{class_c_u_d_p_aa71e49c760769b55dc2251b244eb00ff}} 
+\hyperlink{class_datagram}{Datagram} {\bfseries get\+Data} (int lable)
+\item 
+\mbox{\Hypertarget{class_c_u_d_p_a2eed7862494fbdc41005e5f536d2f74f}\label{class_c_u_d_p_a2eed7862494fbdc41005e5f536d2f74f}} 
+{\bfseries C\+U\+DP} (\hyperlink{class_msg_list}{Msg\+List} \&send\+Buf, \hyperlink{class_msg_list}{Msg\+List} \&rcv\+Buf)
+\item 
+\mbox{\Hypertarget{class_c_u_d_p_a08619144028e752736166988369598c4}\label{class_c_u_d_p_a08619144028e752736166988369598c4}} 
+bool {\bfseries init} ()
+\item 
+\mbox{\Hypertarget{class_c_u_d_p_a32181d9f38654f9480193af29fc221eb}\label{class_c_u_d_p_a32181d9f38654f9480193af29fc221eb}} 
+void {\bfseries add\+Client} (\hyperlink{class_msg_list}{Msg\+List} send\+Buf, \hyperlink{class_msg_list}{Msg\+List} rcv\+Buf)
+\end{DoxyCompactItemize}
+\subsection*{Public 属性}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_c_u_d_p_a4c0a9bc6c679d857a3461a3a71ba8abd}\label{class_c_u_d_p_a4c0a9bc6c679d857a3461a3a71ba8abd}} 
+\hyperlink{class_c_transport_layer}{C\+Transport\+Layer} $\ast$ {\bfseries outer\+Layer}
+\end{DoxyCompactItemize}
+\subsection*{Protected 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_c_u_d_p_a445c3b7fe1b58e8b278115649ad25c3f}\label{class_c_u_d_p_a445c3b7fe1b58e8b278115649ad25c3f}} 
+void {\bfseries add\+Head} ()
+\item 
+\mbox{\Hypertarget{class_c_u_d_p_a445c3b7fe1b58e8b278115649ad25c3f}\label{class_c_u_d_p_a445c3b7fe1b58e8b278115649ad25c3f}} 
+void {\bfseries add\+Head} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected 属性}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_c_u_d_p_adc6c3097ec9ab885987b058ef3b1e26f}\label{class_c_u_d_p_adc6c3097ec9ab885987b058ef3b1e26f}} 
+std\+::vector$<$ \hyperlink{class_msg_list}{Msg\+List} $\ast$ $>$ {\bfseries m\+\_\+\+Msg\+List\+Send\+Que}
+\item 
+\mbox{\Hypertarget{class_c_u_d_p_acf38f880b4ccfbff285aeaff75a931a4}\label{class_c_u_d_p_acf38f880b4ccfbff285aeaff75a931a4}} 
+int {\bfseries m\+\_\+i\+Send\+Que\+Tail}
+\item 
+\mbox{\Hypertarget{class_c_u_d_p_ae04cfd9b77ae1d4f96d83e890a1203f3}\label{class_c_u_d_p_ae04cfd9b77ae1d4f96d83e890a1203f3}} 
+std\+::vector$<$ \hyperlink{class_msg_list}{Msg\+List} $\ast$ $>$ {\bfseries m\+\_\+\+Msg\+List\+Recv\+Que}
+\item 
+\mbox{\Hypertarget{class_c_u_d_p_ae90f37aa5c56ecf05cf6e4daacd90bba}\label{class_c_u_d_p_ae90f37aa5c56ecf05cf6e4daacd90bba}} 
+int {\bfseries m\+\_\+i\+Recv\+Que\+Tail}
+\end{DoxyCompactItemize}
+\subsection*{额外继承的成员函数}
+
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+G\+:/华中科技大学/计卓1401/大三下/计算机网络/\+Layer\+Interface/\+Transport\+Layer/U\+D\+P.\+h\item 
+G\+:/华中科技大学/计卓1401/大三下/计算机网络/\+Layer\+Interface/\+U\+D\+P\+Layer/C\+U\+D\+P.\+h\item 
+G\+:/华中科技大学/计卓1401/大三下/计算机网络/\+Layer\+Interface/\+Transport\+Layer/U\+D\+P.\+cpp\item 
+G\+:/华中科技大学/计卓1401/大三下/计算机网络/\+Layer\+Interface/\+U\+D\+P\+Layer/C\+U\+D\+P.\+cpp\end{DoxyCompactItemize}

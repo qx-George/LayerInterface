@@ -1,0 +1,135 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Internet Protocol Stack: CNetConn类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Internet Protocol Stack
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pub-attribs">Public 属性</a> &#124;
+<a href="#pub-static-attribs">静态 Public 属性</a> &#124;
+<a href="class_c_net_conn-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">CNetConn类 参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="_layer_interface_2_net_conn_8h_source.html">NetConn.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:acbae5bdb550ed916cfaedf6ec0caa8de"><td class="memItemLeft" align="right" valign="top"><a id="acbae5bdb550ed916cfaedf6ec0caa8de"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>alloc</b> (int type, int proto)</td></tr>
+<tr class="separator:acbae5bdb550ed916cfaedf6ec0caa8de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9157b83f4f5d149487dadba775e53fa3"><td class="memItemLeft" align="right" valign="top"><a id="a9157b83f4f5d149487dadba775e53fa3"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setAddress</b> (std::string IP, unsigned int port, int isRemote)</td></tr>
+<tr class="separator:a9157b83f4f5d149487dadba775e53fa3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acbae5bdb550ed916cfaedf6ec0caa8de"><td class="memItemLeft" align="right" valign="top"><a id="acbae5bdb550ed916cfaedf6ec0caa8de"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>alloc</b> (int type, int proto)</td></tr>
+<tr class="separator:acbae5bdb550ed916cfaedf6ec0caa8de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9157b83f4f5d149487dadba775e53fa3"><td class="memItemLeft" align="right" valign="top"><a id="a9157b83f4f5d149487dadba775e53fa3"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setAddress</b> (std::string IP, unsigned int port, int isRemote)</td></tr>
+<tr class="separator:a9157b83f4f5d149487dadba775e53fa3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Public 属性</h2></td></tr>
+<tr class="memitem:af403a1097dad68c834126c515fa76893"><td class="memItemLeft" align="right" valign="top"><a id="af403a1097dad68c834126c515fa76893"></a>
+std::string&#160;</td><td class="memItemRight" valign="bottom"><b>lastErr</b></td></tr>
+<tr class="separator:af403a1097dad68c834126c515fa76893"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a622ed64d7d62629e8ac33b1d2d0c70bc"><td class="memItemLeft" align="right" valign="top"><a id="a622ed64d7d62629e8ac33b1d2d0c70bc"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>socket</b></td></tr>
+<tr class="separator:a622ed64d7d62629e8ac33b1d2d0c70bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab811fe46f1f54064735438c119df692e"><td class="memItemLeft" align="right" valign="top"><a id="ab811fe46f1f54064735438c119df692e"></a>
+std::string&#160;</td><td class="memItemRight" valign="bottom"><b>srcIP</b></td></tr>
+<tr class="separator:ab811fe46f1f54064735438c119df692e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a29e8c336b1ebcdec3d1867d2c8667d88"><td class="memItemLeft" align="right" valign="top"><a id="a29e8c336b1ebcdec3d1867d2c8667d88"></a>
+std::string&#160;</td><td class="memItemRight" valign="bottom"><b>dstIP</b></td></tr>
+<tr class="separator:a29e8c336b1ebcdec3d1867d2c8667d88"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a01763de4d43bf8f45022ad549141ec2b"><td class="memItemLeft" align="right" valign="top"><a id="a01763de4d43bf8f45022ad549141ec2b"></a>
+unsigned int&#160;</td><td class="memItemRight" valign="bottom"><b>srcPort</b></td></tr>
+<tr class="separator:a01763de4d43bf8f45022ad549141ec2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3ba6e293a471292e135c20706d388b9c"><td class="memItemLeft" align="right" valign="top"><a id="a3ba6e293a471292e135c20706d388b9c"></a>
+unsigned int&#160;</td><td class="memItemRight" valign="bottom"><b>dstPort</b></td></tr>
+<tr class="separator:a3ba6e293a471292e135c20706d388b9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a887c118d2000cf8bd230a8f09579b7b7"><td class="memItemLeft" align="right" valign="top"><a id="a887c118d2000cf8bd230a8f09579b7b7"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>tranProto</b></td></tr>
+<tr class="separator:a887c118d2000cf8bd230a8f09579b7b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af2958082fddd86589edf11785ccc8231"><td class="memItemLeft" align="right" valign="top"><a id="af2958082fddd86589edf11785ccc8231"></a>
+<a class="el" href="class_c_net_conn.html">CNetConn</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>next</b></td></tr>
+<tr class="separator:af2958082fddd86589edf11785ccc8231"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
+静态 Public 属性</h2></td></tr>
+<tr class="memitem:a4d52e492a5ac410d6bf6bb0c7d2df5a9"><td class="memItemLeft" align="right" valign="top"><a id="a4d52e492a5ac410d6bf6bb0c7d2df5a9"></a>
+static <a class="el" href="class_c_net_conn.html">CNetConn</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>phead</b> = nullptr</td></tr>
+<tr class="separator:a4d52e492a5ac410d6bf6bb0c7d2df5a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>记录链接状态信息 </p>
+</div><hr/>该类的文档由以下文件生成:<ul>
+<li>G:/华中科技大学/计卓1401/大三下/计算机网络/LayerInterface/LayerInterface/<a class="el" href="_layer_interface_2_net_conn_8h_source.html">NetConn.h</a></li>
+<li>G:/华中科技大学/计卓1401/大三下/计算机网络/LayerInterface/LayerInterface/NetConn.cpp</li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

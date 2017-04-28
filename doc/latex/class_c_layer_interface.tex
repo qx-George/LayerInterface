@@ -1,0 +1,127 @@
+\hypertarget{class_c_layer_interface}{}\section{C\+Layer\+Interface类 参考}
+\label{class_c_layer_interface}\index{C\+Layer\+Interface@{C\+Layer\+Interface}}
+类 C\+Layer\+Interface 继承关系图\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.068965cm]{class_c_layer_interface}
+\end{center}
+\end{figure}
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_c_layer_interface_a505d26b4942bb87ece39152a71bcfb62}\label{class_c_layer_interface_a505d26b4942bb87ece39152a71bcfb62}} 
+{\bfseries C\+Layer\+Interface} (\hyperlink{class_msg_list}{Msg\+List} \&td, \hyperlink{class_msg_list}{Msg\+List} \&dt)
+\item 
+\mbox{\Hypertarget{class_c_layer_interface_a82cdd178439031dd581a8f7208f2a134}\label{class_c_layer_interface_a82cdd178439031dd581a8f7208f2a134}} 
+bool {\bfseries init} ()
+\item 
+\mbox{\Hypertarget{class_c_layer_interface_a72740530fff12b29c8d1fb23aed88f2c}\label{class_c_layer_interface_a72740530fff12b29c8d1fb23aed88f2c}} 
+void {\bfseries run} ()
+\item 
+\mbox{\Hypertarget{class_c_layer_interface_aa77c283e1d595a23513ff21cbf72ab97}\label{class_c_layer_interface_aa77c283e1d595a23513ff21cbf72ab97}} 
+void {\bfseries stop\+Run} ()
+\item 
+\mbox{\Hypertarget{class_c_layer_interface_ad2d30dcc6415c22dd01f87114753d996}\label{class_c_layer_interface_ad2d30dcc6415c22dd01f87114753d996}} 
+void {\bfseries layer\+Control} ()
+\item 
+\mbox{\Hypertarget{class_c_layer_interface_a4979d7b5740c06be048e4b0f1195c8fc}\label{class_c_layer_interface_a4979d7b5740c06be048e4b0f1195c8fc}} 
+virtual bool {\bfseries is\+Buffer\+Ready} (int lable)
+\item 
+\mbox{\Hypertarget{class_c_layer_interface_a804d604d3e0032e676d02fd5d369607e}\label{class_c_layer_interface_a804d604d3e0032e676d02fd5d369607e}} 
+virtual \hyperlink{class_datagram}{Datagram} {\bfseries get\+Data} (int lable)
+\item 
+\mbox{\Hypertarget{class_c_layer_interface_ae5115cf6ee0e76247dac067cc797a06b}\label{class_c_layer_interface_ae5115cf6ee0e76247dac067cc797a06b}} 
+virtual bool {\bfseries send\+Data} (\hyperlink{class_datagram}{Datagram} data)
+\item 
+\mbox{\Hypertarget{class_c_layer_interface_a72415f0966b67359e0ee885d98827c3f}\label{class_c_layer_interface_a72415f0966b67359e0ee885d98827c3f}} 
+virtual bool {\bfseries recv\+Data} (\hyperlink{class_datagram}{Datagram} data)
+\item 
+\mbox{\Hypertarget{class_c_layer_interface_a006961acbffa93cc0936010432b8e612}\label{class_c_layer_interface_a006961acbffa93cc0936010432b8e612}} 
+void {\bfseries set\+Head\+Tail\+Len} (int i\+Msg\+Head\+Len, int i\+Msg\+Tail\+Len)
+\end{DoxyCompactItemize}
+\subsection*{静态 Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_c_layer_interface_a59d79b4c294ca20c2a761a4f1f737e24}\label{class_c_layer_interface_a59d79b4c294ca20c2a761a4f1f737e24}} 
+static D\+W\+O\+RD W\+I\+N\+A\+PI {\bfseries layer\+Thread} (L\+P\+V\+O\+ID lp\+Param)
+\end{DoxyCompactItemize}
+\subsection*{Protected 类型}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_c_layer_interface_a033fd0915604b00e58a68115d414a50a}\label{class_c_layer_interface_a033fd0915604b00e58a68115d414a50a}} 
+enum \{ {\bfseries S\+E\+R\+V\+ER} = 0, 
+{\bfseries C\+L\+I\+E\+NT}
+ \}
+\item 
+\mbox{\Hypertarget{class_c_layer_interface_abcab6cee3a2b9a396b287124f4204756}\label{class_c_layer_interface_abcab6cee3a2b9a396b287124f4204756}} 
+enum {\bfseries m\+\_\+\+Serv\+Proto\+Type} \{ {\bfseries T\+CP}, 
+{\bfseries U\+DP}, 
+{\bfseries IP}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Protected 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_c_layer_interface_a4bde2a0310c9071cbe7020cc38c97674}\label{class_c_layer_interface_a4bde2a0310c9071cbe7020cc38c97674}} 
+virtual void {\bfseries package} (\hyperlink{class_datagram}{Datagram} datagram)
+\item 
+\mbox{\Hypertarget{class_c_layer_interface_a94cb2e090328df13a252a2ea40db94d8}\label{class_c_layer_interface_a94cb2e090328df13a252a2ea40db94d8}} 
+virtual void {\bfseries unpack} ()
+\item 
+\mbox{\Hypertarget{class_c_layer_interface_ac38c51660960657ac42e37a19ea062b4}\label{class_c_layer_interface_ac38c51660960657ac42e37a19ea062b4}} 
+virtual void {\bfseries add\+Head} ()
+\item 
+\mbox{\Hypertarget{class_c_layer_interface_a433a6f3322355291bbfc2b97343d493f}\label{class_c_layer_interface_a433a6f3322355291bbfc2b97343d493f}} 
+virtual void {\bfseries add\+Tail} ()
+\item 
+\mbox{\Hypertarget{class_c_layer_interface_ac98e8ced890a29b4b76e16cfa3defddb}\label{class_c_layer_interface_ac98e8ced890a29b4b76e16cfa3defddb}} 
+void {\bfseries rmv\+Head\+Buf} ()
+\item 
+\mbox{\Hypertarget{class_c_layer_interface_a02a144b97e69df2dc47149e5314cba2d}\label{class_c_layer_interface_a02a144b97e69df2dc47149e5314cba2d}} 
+virtual void {\bfseries send\+Transfer} ()
+\item 
+\mbox{\Hypertarget{class_c_layer_interface_aca72cd6ae77b4e4b4c1d058377583110}\label{class_c_layer_interface_aca72cd6ae77b4e4b4c1d058377583110}} 
+virtual void {\bfseries recv\+Transfer} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected 属性}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_c_layer_interface_a21292dad42f0048a08a19eeeba0d68cc}\label{class_c_layer_interface_a21292dad42f0048a08a19eeeba0d68cc}} 
+bool {\bfseries b\+Stop}
+\item 
+\mbox{\Hypertarget{class_c_layer_interface_a075d83e440db42925a85d17f9e3e9a0b}\label{class_c_layer_interface_a075d83e440db42925a85d17f9e3e9a0b}} 
+\hyperlink{class_c_layer_interface}{C\+Layer\+Interface} $\ast$ {\bfseries p\+Server\+Layer}
+\item 
+\mbox{\Hypertarget{class_c_layer_interface_ab5e0e1580b714b045664a8051373b8f2}\label{class_c_layer_interface_ab5e0e1580b714b045664a8051373b8f2}} 
+bool {\bfseries b\+Has\+Server\+Layer}
+\item 
+\mbox{\Hypertarget{class_c_layer_interface_a6c3c04e1123c94ff609dafbd2429dfee}\label{class_c_layer_interface_a6c3c04e1123c94ff609dafbd2429dfee}} 
+\hyperlink{class_datagram}{Datagram} $\ast$ {\bfseries m\+\_\+p\+Datagram}
+\item 
+\mbox{\Hypertarget{class_c_layer_interface_a7057ebc9a57429562f4642b5e8586a52}\label{class_c_layer_interface_a7057ebc9a57429562f4642b5e8586a52}} 
+int {\bfseries m\+\_\+n\+Msg\+Head\+Len}
+\item 
+\mbox{\Hypertarget{class_c_layer_interface_a6c9d5fd635c29705c2cb9bea7c5a68f5}\label{class_c_layer_interface_a6c9d5fd635c29705c2cb9bea7c5a68f5}} 
+int {\bfseries m\+\_\+n\+Msg\+Tail\+Len}
+\item 
+\mbox{\Hypertarget{class_c_layer_interface_ab85631c424f3a77311ca4532db18d8a6}\label{class_c_layer_interface_ab85631c424f3a77311ca4532db18d8a6}} 
+\hyperlink{class_msg_list}{Msg\+List} {\bfseries my\+Send\+Buf}
+\item 
+\mbox{\Hypertarget{class_c_layer_interface_a6b35060c9d58ff2a0f394e1c54301ae8}\label{class_c_layer_interface_a6b35060c9d58ff2a0f394e1c54301ae8}} 
+\hyperlink{class_msg_list}{Msg\+List} {\bfseries my\+Recv\+Buf}
+\item 
+\mbox{\Hypertarget{class_c_layer_interface_a17da1d50a68115d810b8079f1c6e22d7}\label{class_c_layer_interface_a17da1d50a68115d810b8079f1c6e22d7}} 
+\hyperlink{class_msg_list}{Msg\+List} \& {\bfseries m\+\_\+p\+Client\+Send\+Buf}
+\item 
+\mbox{\Hypertarget{class_c_layer_interface_af9509b975b79a1c15a5a5523c03eeaaa}\label{class_c_layer_interface_af9509b975b79a1c15a5a5523c03eeaaa}} 
+\hyperlink{class_msg_list}{Msg\+List} \& {\bfseries m\+\_\+p\+Client\+Rcv\+Buf}
+\item 
+\mbox{\Hypertarget{class_c_layer_interface_a91818359711b0f61e18347707a13ba31}\label{class_c_layer_interface_a91818359711b0f61e18347707a13ba31}} 
+H\+A\+N\+D\+LE {\bfseries h\+Thread}
+\end{DoxyCompactItemize}
+
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+G\+:/华中科技大学/计卓1401/大三下/计算机网络/\+Layer\+Interface/\+Layer\+Interface/Layer\+Interface.\+h\item 
+G\+:/华中科技大学/计卓1401/大三下/计算机网络/\+Layer\+Interface/\+Layer\+Interface/Layer\+Interface.\+cpp\end{DoxyCompactItemize}
