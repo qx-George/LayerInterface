@@ -9,15 +9,24 @@
 //				 数据链路层或应用层时，你应该注意是否需要回收内存垃圾。
 //====================================================================================
 
+/**
+ * @author：Xiong_Joe
+ * @date：2017/5/1
+ * @brief: 这个类是数据报类，用来存储和转发数据，一方面要对上层的数据包进行包装，加入头部；
+ * 另一方面，要对下层的数据包进行拆包，将包头信息去除，得到数据
+ * @attention: 此处只对协议栈的中间层提供了数据内存的转储和释放功能，但当编写数据链路层或
+ * 应用层时，应该注意是够需要回收内存垃圾
+ */
+
 class Datagram
 {
 public:
-	char *pHead;			// 报文头指针
-	char *pData;			// 报文数据指针
-	char *pTail;			// 报文尾指针
-	int m_nMegLen;			// 报文总长度
-	int m_nMsgHeadLen;		// 报文头长度
-	int m_nMsgTailLen;		// 报文尾长度
+	char *pHead;			/**< 报文头指针*/
+	char *pData;			/**< 报文数据指针*/
+	char *pTail;			/**< 报文尾指针*/
+	int m_nMegLen;			/**< 报文总长度*/
+	int m_nMsgHeadLen;		/**< 报文头长度*/
+	int m_nMsgTailLen;		/**< 报文尾长度*/
 
 	Datagram() : Datagram(-1){ }
 

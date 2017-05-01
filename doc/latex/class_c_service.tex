@@ -1,21 +1,25 @@
 \hypertarget{class_c_service}{}\section{C\+Service类 参考}
 \label{class_c_service}\index{C\+Service@{C\+Service}}
+
+
+{\ttfamily \#include $<$Service.\+h$>$}
+
 \subsection*{Public 类型}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{class_c_service_abd1684d960aef251b1d74edf372c5d1b}\label{class_c_service_abd1684d960aef251b1d74edf372c5d1b}} 
-enum {\bfseries S\+O\+C\+K\+\_\+\+P\+R\+O\+TO} \{ {\bfseries S\+T\+R\+E\+AM} = 1, 
-{\bfseries D\+G\+R\+AM} = 2, 
-{\bfseries R\+AW} = 3
+enum \hyperlink{class_c_service_abd1684d960aef251b1d74edf372c5d1b}{S\+O\+C\+K\+\_\+\+P\+R\+O\+TO} \{ \hyperlink{class_c_service_abd1684d960aef251b1d74edf372c5d1ba479167516419221933e0143b80a50152}{S\+T\+R\+E\+AM} = 1, 
+\hyperlink{class_c_service_abd1684d960aef251b1d74edf372c5d1bafda42db5e2e8f056a2efd03bfa0f3e96}{D\+G\+R\+AM} = 2, 
+\hyperlink{class_c_service_abd1684d960aef251b1d74edf372c5d1bab25fd2485455ea631949e45849c7c390}{R\+AW} = 3
  \}
 \item 
-\mbox{\Hypertarget{class_c_service_a43fb60063bc9f9b0f4e3eeb1787056b0}\label{class_c_service_a43fb60063bc9f9b0f4e3eeb1787056b0}} 
-enum {\bfseries Proto} \{ {\bfseries T\+CP}, 
-{\bfseries U\+DP}
+enum \hyperlink{class_c_service_a43fb60063bc9f9b0f4e3eeb1787056b0}{Proto} \{ \hyperlink{class_c_service_a43fb60063bc9f9b0f4e3eeb1787056b0a69fdc51ce4262393db36351c381d86a9}{T\+CP}, 
+\hyperlink{class_c_service_a43fb60063bc9f9b0f4e3eeb1787056b0ac45d78d4edd8c6f5d27519dffc61f001}{U\+DP}
  \}
 \end{DoxyCompactItemize}
 \subsection*{Public 成员函数}
 \begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_c_service_ac4fb853bd01a2b0d71399ab28de19cc6}{C\+Service} (void)
 \item 
 int \hyperlink{class_c_service_ae632f34f3aceab829b89ee46374658f2}{socket} (int domain, int type, int protocol)
 \begin{DoxyCompactList}\small\item\em 用于创建一个socket描述符，它唯一标识一个socket \end{DoxyCompactList}\item 
@@ -27,14 +31,79 @@ int \hyperlink{class_c_service_a4788fc741e72baeaa5e15e459494f661}{connect} (int 
 \begin{DoxyCompactList}\small\item\em 客户端请求链接\+I\+P与端口号 \end{DoxyCompactList}\item 
 int \hyperlink{class_c_service_a694c7ac8c230b0d1d11bc98a32abcd71}{accept} (int socket\+Id, std\+::string \&IP, unsigned short int \&port)
 \begin{DoxyCompactList}\small\item\em 服务器同意链接 \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{class_c_service_a221d063aa8a89ecc84084e1bbd287210}\label{class_c_service_a221d063aa8a89ecc84084e1bbd287210}} 
 int \hyperlink{class_c_service_a221d063aa8a89ecc84084e1bbd287210}{recv} (int socket\+Id, char $\ast$\&msg, int \&length)
 \begin{DoxyCompactList}\small\item\em 发送与接收 \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{class_c_service_a883e80cc5ea699e8408bbffe7c18414b}\label{class_c_service_a883e80cc5ea699e8408bbffe7c18414b}} 
-int {\bfseries send} (int socket\+Id, char $\ast$msg, int length)
+int \hyperlink{class_c_service_a883e80cc5ea699e8408bbffe7c18414b}{send} (int socket\+Id, char $\ast$msg, int length)
 \item 
 int \hyperlink{class_c_service_abb0357bf57a735cc27f0e667d7e21787}{close} (int socket\+Id)
 \begin{DoxyCompactList}\small\item\em 关闭连接 \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{详细描述}
+
+
+在文件 Service.\+h 第 23 行定义.
+
+
+
+\subsection{成员枚举类型说明}
+\mbox{\Hypertarget{class_c_service_a43fb60063bc9f9b0f4e3eeb1787056b0}\label{class_c_service_a43fb60063bc9f9b0f4e3eeb1787056b0}} 
+\index{C\+Service@{C\+Service}!Proto@{Proto}}
+\index{Proto@{Proto}!C\+Service@{C\+Service}}
+\subsubsection{\texorpdfstring{Proto}{Proto}}
+{\footnotesize\ttfamily enum \hyperlink{class_c_service_a43fb60063bc9f9b0f4e3eeb1787056b0}{C\+Service\+::\+Proto}}
+
+\begin{DoxyEnumFields}{枚举值}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{T\+CP@{T\+CP}!C\+Service@{C\+Service}}\index{C\+Service@{C\+Service}!T\+CP@{T\+CP}}}\mbox{\Hypertarget{class_c_service_a43fb60063bc9f9b0f4e3eeb1787056b0a69fdc51ce4262393db36351c381d86a9}\label{class_c_service_a43fb60063bc9f9b0f4e3eeb1787056b0a69fdc51ce4262393db36351c381d86a9}} 
+T\+CP&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{U\+DP@{U\+DP}!C\+Service@{C\+Service}}\index{C\+Service@{C\+Service}!U\+DP@{U\+DP}}}\mbox{\Hypertarget{class_c_service_a43fb60063bc9f9b0f4e3eeb1787056b0ac45d78d4edd8c6f5d27519dffc61f001}\label{class_c_service_a43fb60063bc9f9b0f4e3eeb1787056b0ac45d78d4edd8c6f5d27519dffc61f001}} 
+U\+DP&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+在文件 Service.\+h 第 94 行定义.
+
+\mbox{\Hypertarget{class_c_service_abd1684d960aef251b1d74edf372c5d1b}\label{class_c_service_abd1684d960aef251b1d74edf372c5d1b}} 
+\index{C\+Service@{C\+Service}!S\+O\+C\+K\+\_\+\+P\+R\+O\+TO@{S\+O\+C\+K\+\_\+\+P\+R\+O\+TO}}
+\index{S\+O\+C\+K\+\_\+\+P\+R\+O\+TO@{S\+O\+C\+K\+\_\+\+P\+R\+O\+TO}!C\+Service@{C\+Service}}
+\subsubsection{\texorpdfstring{S\+O\+C\+K\+\_\+\+P\+R\+O\+TO}{SOCK\_PROTO}}
+{\footnotesize\ttfamily enum \hyperlink{class_c_service_abd1684d960aef251b1d74edf372c5d1b}{C\+Service\+::\+S\+O\+C\+K\+\_\+\+P\+R\+O\+TO}}
+
+\begin{DoxyEnumFields}{枚举值}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{S\+T\+R\+E\+AM@{S\+T\+R\+E\+AM}!C\+Service@{C\+Service}}\index{C\+Service@{C\+Service}!S\+T\+R\+E\+AM@{S\+T\+R\+E\+AM}}}\mbox{\Hypertarget{class_c_service_abd1684d960aef251b1d74edf372c5d1ba479167516419221933e0143b80a50152}\label{class_c_service_abd1684d960aef251b1d74edf372c5d1ba479167516419221933e0143b80a50152}} 
+S\+T\+R\+E\+AM&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{D\+G\+R\+AM@{D\+G\+R\+AM}!C\+Service@{C\+Service}}\index{C\+Service@{C\+Service}!D\+G\+R\+AM@{D\+G\+R\+AM}}}\mbox{\Hypertarget{class_c_service_abd1684d960aef251b1d74edf372c5d1bafda42db5e2e8f056a2efd03bfa0f3e96}\label{class_c_service_abd1684d960aef251b1d74edf372c5d1bafda42db5e2e8f056a2efd03bfa0f3e96}} 
+D\+G\+R\+AM&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{R\+AW@{R\+AW}!C\+Service@{C\+Service}}\index{C\+Service@{C\+Service}!R\+AW@{R\+AW}}}\mbox{\Hypertarget{class_c_service_abd1684d960aef251b1d74edf372c5d1bab25fd2485455ea631949e45849c7c390}\label{class_c_service_abd1684d960aef251b1d74edf372c5d1bab25fd2485455ea631949e45849c7c390}} 
+R\+AW&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+在文件 Service.\+h 第 87 行定义.
+
+
+
+\subsection{构造及析构函数说明}
+\mbox{\Hypertarget{class_c_service_ac4fb853bd01a2b0d71399ab28de19cc6}\label{class_c_service_ac4fb853bd01a2b0d71399ab28de19cc6}} 
+\index{C\+Service@{C\+Service}!C\+Service@{C\+Service}}
+\index{C\+Service@{C\+Service}!C\+Service@{C\+Service}}
+\subsubsection{\texorpdfstring{C\+Service()}{CService()}}
+{\footnotesize\ttfamily C\+Service\+::\+C\+Service (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+在文件 Service.\+cpp 第 22 行定义.
+
 
 
 \subsection{成员函数说明}
@@ -60,6 +129,10 @@ int \hyperlink{class_c_service_abb0357bf57a735cc27f0e667d7e21787}{close} (int so
 \begin{DoxyReturn}{返回}
 socket描述符 
 \end{DoxyReturn}
+
+
+在文件 Service.\+cpp 第 89 行定义.
+
 \mbox{\Hypertarget{class_c_service_ab345d03f1f85d053472b05de3ea211eb}\label{class_c_service_ab345d03f1f85d053472b05de3ea211eb}} 
 \index{C\+Service@{C\+Service}!bind@{bind}}
 \index{bind@{bind}!C\+Service@{C\+Service}}
@@ -82,6 +155,10 @@ socket描述符
 \begin{DoxyReturn}{返回}
 错误码 
 \end{DoxyReturn}
+
+
+在文件 Service.\+cpp 第 68 行定义.
+
 \mbox{\Hypertarget{class_c_service_abb0357bf57a735cc27f0e667d7e21787}\label{class_c_service_abb0357bf57a735cc27f0e667d7e21787}} 
 \index{C\+Service@{C\+Service}!close@{close}}
 \index{close@{close}!C\+Service@{C\+Service}}
@@ -100,6 +177,10 @@ socket描述符
 \begin{DoxyReturn}{返回}
 socket描述符 
 \end{DoxyReturn}
+
+
+在文件 Service.\+cpp 第 127 行定义.
+
 \mbox{\Hypertarget{class_c_service_a4788fc741e72baeaa5e15e459494f661}\label{class_c_service_a4788fc741e72baeaa5e15e459494f661}} 
 \index{C\+Service@{C\+Service}!connect@{connect}}
 \index{connect@{connect}!C\+Service@{C\+Service}}
@@ -122,6 +203,10 @@ socket描述符
 \begin{DoxyReturn}{返回}
 错误码 
 \end{DoxyReturn}
+
+
+在文件 Service.\+cpp 第 73 行定义.
+
 \mbox{\Hypertarget{class_c_service_a32f59bebc1aef849f38b72218a87c674}\label{class_c_service_a32f59bebc1aef849f38b72218a87c674}} 
 \index{C\+Service@{C\+Service}!listen@{listen}}
 \index{listen@{listen}!C\+Service@{C\+Service}}
@@ -142,6 +227,34 @@ socket描述符
 \begin{DoxyReturn}{返回}
 错误码 
 \end{DoxyReturn}
+
+
+在文件 Service.\+cpp 第 84 行定义.
+
+\mbox{\Hypertarget{class_c_service_a221d063aa8a89ecc84084e1bbd287210}\label{class_c_service_a221d063aa8a89ecc84084e1bbd287210}} 
+\index{C\+Service@{C\+Service}!recv@{recv}}
+\index{recv@{recv}!C\+Service@{C\+Service}}
+\subsubsection{\texorpdfstring{recv()}{recv()}}
+{\footnotesize\ttfamily int C\+Service\+::recv (\begin{DoxyParamCaption}\item[{int}]{socket\+Id,  }\item[{char $\ast$\&}]{msg,  }\item[{int \&}]{length }\end{DoxyParamCaption})}
+
+
+
+发送与接收 
+
+
+
+在文件 Service.\+cpp 第 94 行定义.
+
+\mbox{\Hypertarget{class_c_service_a883e80cc5ea699e8408bbffe7c18414b}\label{class_c_service_a883e80cc5ea699e8408bbffe7c18414b}} 
+\index{C\+Service@{C\+Service}!send@{send}}
+\index{send@{send}!C\+Service@{C\+Service}}
+\subsubsection{\texorpdfstring{send()}{send()}}
+{\footnotesize\ttfamily int C\+Service\+::send (\begin{DoxyParamCaption}\item[{int}]{socket\+Id,  }\item[{char $\ast$}]{msg,  }\item[{int}]{length }\end{DoxyParamCaption})}
+
+
+
+在文件 Service.\+cpp 第 104 行定义.
+
 \mbox{\Hypertarget{class_c_service_ae632f34f3aceab829b89ee46374658f2}\label{class_c_service_ae632f34f3aceab829b89ee46374658f2}} 
 \index{C\+Service@{C\+Service}!socket@{socket}}
 \index{socket@{socket}!C\+Service@{C\+Service}}
@@ -166,7 +279,11 @@ socket标识符
 \end{DoxyReturn}
 
 
+在文件 Service.\+cpp 第 30 行定义.
+
+
+
 该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
 \item 
-G\+:/华中科技大学/计卓1401/大三下/计算机网络/\+Layer\+Interface/\+Service/Service.\+h\item 
-G\+:/华中科技大学/计卓1401/大三下/计算机网络/\+Layer\+Interface/\+Service/Service.\+cpp\end{DoxyCompactItemize}
+G\+:/华中科技大学/计卓1401/大三下/计算机网络/\+Layer\+Interface/\+Service/\hyperlink{_service_8h}{Service.\+h}\item 
+G\+:/华中科技大学/计卓1401/大三下/计算机网络/\+Layer\+Interface/\+Service/\hyperlink{_service_8cpp}{Service.\+cpp}\end{DoxyCompactItemize}

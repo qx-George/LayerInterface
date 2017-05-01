@@ -1,21 +1,25 @@
 \hypertarget{class_c_socket}{}\section{C\+Socket类 参考}
 \label{class_c_socket}\index{C\+Socket@{C\+Socket}}
+
+
+{\ttfamily \#include $<$Socket.\+h$>$}
+
 \subsection*{Public 类型}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{class_c_socket_a1612592be6a8334d298c6e289b7d4ac7}\label{class_c_socket_a1612592be6a8334d298c6e289b7d4ac7}} 
-enum {\bfseries S\+O\+C\+K\+\_\+\+P\+R\+O\+TO} \{ {\bfseries S\+T\+R\+E\+AM} = 1, 
-{\bfseries D\+G\+R\+AM} = 2, 
-{\bfseries R\+AW} = 3
+enum \hyperlink{class_c_socket_a1612592be6a8334d298c6e289b7d4ac7}{S\+O\+C\+K\+\_\+\+P\+R\+O\+TO} \{ \hyperlink{class_c_socket_a1612592be6a8334d298c6e289b7d4ac7aa68b727cc96993e7b2d851efc206b816}{S\+T\+R\+E\+AM} = 1, 
+\hyperlink{class_c_socket_a1612592be6a8334d298c6e289b7d4ac7ae4111634fb817bbe019d43d5466d4684}{D\+G\+R\+AM} = 2, 
+\hyperlink{class_c_socket_a1612592be6a8334d298c6e289b7d4ac7abcc2f37504b085d7d179861968a81bfd}{R\+AW} = 3
  \}
 \item 
-\mbox{\Hypertarget{class_c_socket_a9f5168b936eacaffc83a9ba3200ec00b}\label{class_c_socket_a9f5168b936eacaffc83a9ba3200ec00b}} 
-enum {\bfseries Proto} \{ {\bfseries T\+CP}, 
-{\bfseries U\+DP}
+enum \hyperlink{class_c_socket_a9f5168b936eacaffc83a9ba3200ec00b}{Proto} \{ \hyperlink{class_c_socket_a9f5168b936eacaffc83a9ba3200ec00ba2896b183058aba44c8b256aba6e04ede}{T\+CP}, 
+\hyperlink{class_c_socket_a9f5168b936eacaffc83a9ba3200ec00baf8434cb3900ac44e8898d5e430b34e2c}{U\+DP}
  \}
 \end{DoxyCompactItemize}
 \subsection*{Public 成员函数}
 \begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_c_socket_a3f5f8efaa44309a1991e72b985a49a33}{C\+Socket} ()
 \item 
 int \hyperlink{class_c_socket_abc15c93dfbf879f5dacc8b4b5dd951b1}{socket} (int domain, int type, int protocol)
 \begin{DoxyCompactList}\small\item\em 用于创建一个socket描述符，它唯一标识一个socket \end{DoxyCompactList}\item 
@@ -27,14 +31,79 @@ int \hyperlink{class_c_socket_a7c54f8c3c1fef6dd1c84c105e99ddbb1}{connect} (int s
 \begin{DoxyCompactList}\small\item\em 客户端请求链接\+I\+P与端口号 \end{DoxyCompactList}\item 
 int \hyperlink{class_c_socket_aaf0c338bcac7bbb4b9a4e57f62c7e7df}{accept} (int socket\+Id, std\+::string \&IP, unsigned short int \&port)
 \begin{DoxyCompactList}\small\item\em 服务器同意链接 \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{class_c_socket_aafbbf6818bd94b8fda58b8a7ee8417c3}\label{class_c_socket_aafbbf6818bd94b8fda58b8a7ee8417c3}} 
 int \hyperlink{class_c_socket_aafbbf6818bd94b8fda58b8a7ee8417c3}{recv} (int socket\+Id, char $\ast$\&msg, int \&length)
 \begin{DoxyCompactList}\small\item\em 发送与接收 \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{class_c_socket_ab034dd0ed69981237cc8385a6786d5ab}\label{class_c_socket_ab034dd0ed69981237cc8385a6786d5ab}} 
-int {\bfseries send} (int socket\+Id, char $\ast$msg, int length)
+int \hyperlink{class_c_socket_ab034dd0ed69981237cc8385a6786d5ab}{send} (int socket\+Id, char $\ast$msg, int length)
 \item 
 int \hyperlink{class_c_socket_a1af720c8b15569d9f8f6abd91bc1bfe7}{close} (int socket\+Id)
 \begin{DoxyCompactList}\small\item\em 关闭连接 \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{详细描述}
+
+
+在文件 Socket.\+h 第 6 行定义.
+
+
+
+\subsection{成员枚举类型说明}
+\mbox{\Hypertarget{class_c_socket_a9f5168b936eacaffc83a9ba3200ec00b}\label{class_c_socket_a9f5168b936eacaffc83a9ba3200ec00b}} 
+\index{C\+Socket@{C\+Socket}!Proto@{Proto}}
+\index{Proto@{Proto}!C\+Socket@{C\+Socket}}
+\subsubsection{\texorpdfstring{Proto}{Proto}}
+{\footnotesize\ttfamily enum \hyperlink{class_c_socket_a9f5168b936eacaffc83a9ba3200ec00b}{C\+Socket\+::\+Proto}}
+
+\begin{DoxyEnumFields}{枚举值}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{T\+CP@{T\+CP}!C\+Socket@{C\+Socket}}\index{C\+Socket@{C\+Socket}!T\+CP@{T\+CP}}}\mbox{\Hypertarget{class_c_socket_a9f5168b936eacaffc83a9ba3200ec00ba2896b183058aba44c8b256aba6e04ede}\label{class_c_socket_a9f5168b936eacaffc83a9ba3200ec00ba2896b183058aba44c8b256aba6e04ede}} 
+T\+CP&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{U\+DP@{U\+DP}!C\+Socket@{C\+Socket}}\index{C\+Socket@{C\+Socket}!U\+DP@{U\+DP}}}\mbox{\Hypertarget{class_c_socket_a9f5168b936eacaffc83a9ba3200ec00baf8434cb3900ac44e8898d5e430b34e2c}\label{class_c_socket_a9f5168b936eacaffc83a9ba3200ec00baf8434cb3900ac44e8898d5e430b34e2c}} 
+U\+DP&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+在文件 Socket.\+h 第 76 行定义.
+
+\mbox{\Hypertarget{class_c_socket_a1612592be6a8334d298c6e289b7d4ac7}\label{class_c_socket_a1612592be6a8334d298c6e289b7d4ac7}} 
+\index{C\+Socket@{C\+Socket}!S\+O\+C\+K\+\_\+\+P\+R\+O\+TO@{S\+O\+C\+K\+\_\+\+P\+R\+O\+TO}}
+\index{S\+O\+C\+K\+\_\+\+P\+R\+O\+TO@{S\+O\+C\+K\+\_\+\+P\+R\+O\+TO}!C\+Socket@{C\+Socket}}
+\subsubsection{\texorpdfstring{S\+O\+C\+K\+\_\+\+P\+R\+O\+TO}{SOCK\_PROTO}}
+{\footnotesize\ttfamily enum \hyperlink{class_c_socket_a1612592be6a8334d298c6e289b7d4ac7}{C\+Socket\+::\+S\+O\+C\+K\+\_\+\+P\+R\+O\+TO}}
+
+\begin{DoxyEnumFields}{枚举值}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{S\+T\+R\+E\+AM@{S\+T\+R\+E\+AM}!C\+Socket@{C\+Socket}}\index{C\+Socket@{C\+Socket}!S\+T\+R\+E\+AM@{S\+T\+R\+E\+AM}}}\mbox{\Hypertarget{class_c_socket_a1612592be6a8334d298c6e289b7d4ac7aa68b727cc96993e7b2d851efc206b816}\label{class_c_socket_a1612592be6a8334d298c6e289b7d4ac7aa68b727cc96993e7b2d851efc206b816}} 
+S\+T\+R\+E\+AM&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{D\+G\+R\+AM@{D\+G\+R\+AM}!C\+Socket@{C\+Socket}}\index{C\+Socket@{C\+Socket}!D\+G\+R\+AM@{D\+G\+R\+AM}}}\mbox{\Hypertarget{class_c_socket_a1612592be6a8334d298c6e289b7d4ac7ae4111634fb817bbe019d43d5466d4684}\label{class_c_socket_a1612592be6a8334d298c6e289b7d4ac7ae4111634fb817bbe019d43d5466d4684}} 
+D\+G\+R\+AM&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{R\+AW@{R\+AW}!C\+Socket@{C\+Socket}}\index{C\+Socket@{C\+Socket}!R\+AW@{R\+AW}}}\mbox{\Hypertarget{class_c_socket_a1612592be6a8334d298c6e289b7d4ac7abcc2f37504b085d7d179861968a81bfd}\label{class_c_socket_a1612592be6a8334d298c6e289b7d4ac7abcc2f37504b085d7d179861968a81bfd}} 
+R\+AW&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+在文件 Socket.\+h 第 69 行定义.
+
+
+
+\subsection{构造及析构函数说明}
+\mbox{\Hypertarget{class_c_socket_a3f5f8efaa44309a1991e72b985a49a33}\label{class_c_socket_a3f5f8efaa44309a1991e72b985a49a33}} 
+\index{C\+Socket@{C\+Socket}!C\+Socket@{C\+Socket}}
+\index{C\+Socket@{C\+Socket}!C\+Socket@{C\+Socket}}
+\subsubsection{\texorpdfstring{C\+Socket()}{CSocket()}}
+{\footnotesize\ttfamily C\+Socket\+::\+C\+Socket (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+在文件 Socket.\+cpp 第 9 行定义.
+
 
 
 \subsection{成员函数说明}
@@ -60,6 +129,10 @@ int \hyperlink{class_c_socket_a1af720c8b15569d9f8f6abd91bc1bfe7}{close} (int soc
 \begin{DoxyReturn}{返回}
 socket描述符 
 \end{DoxyReturn}
+
+
+在文件 Socket.\+cpp 第 58 行定义.
+
 \mbox{\Hypertarget{class_c_socket_a498e08712781a360f2cb2279bd1151c4}\label{class_c_socket_a498e08712781a360f2cb2279bd1151c4}} 
 \index{C\+Socket@{C\+Socket}!bind@{bind}}
 \index{bind@{bind}!C\+Socket@{C\+Socket}}
@@ -82,6 +155,10 @@ socket描述符
 \begin{DoxyReturn}{返回}
 错误码 
 \end{DoxyReturn}
+
+
+在文件 Socket.\+cpp 第 30 行定义.
+
 \mbox{\Hypertarget{class_c_socket_a1af720c8b15569d9f8f6abd91bc1bfe7}\label{class_c_socket_a1af720c8b15569d9f8f6abd91bc1bfe7}} 
 \index{C\+Socket@{C\+Socket}!close@{close}}
 \index{close@{close}!C\+Socket@{C\+Socket}}
@@ -100,6 +177,10 @@ socket描述符
 \begin{DoxyReturn}{返回}
 socket描述符 
 \end{DoxyReturn}
+
+
+在文件 Socket.\+cpp 第 79 行定义.
+
 \mbox{\Hypertarget{class_c_socket_a7c54f8c3c1fef6dd1c84c105e99ddbb1}\label{class_c_socket_a7c54f8c3c1fef6dd1c84c105e99ddbb1}} 
 \index{C\+Socket@{C\+Socket}!connect@{connect}}
 \index{connect@{connect}!C\+Socket@{C\+Socket}}
@@ -122,6 +203,10 @@ socket描述符
 \begin{DoxyReturn}{返回}
 错误码 
 \end{DoxyReturn}
+
+
+在文件 Socket.\+cpp 第 42 行定义.
+
 \mbox{\Hypertarget{class_c_socket_acfbd568b041bb6ac35c5fc862aee28f1}\label{class_c_socket_acfbd568b041bb6ac35c5fc862aee28f1}} 
 \index{C\+Socket@{C\+Socket}!listen@{listen}}
 \index{listen@{listen}!C\+Socket@{C\+Socket}}
@@ -142,6 +227,34 @@ socket描述符
 \begin{DoxyReturn}{返回}
 错误码 
 \end{DoxyReturn}
+
+
+在文件 Socket.\+cpp 第 53 行定义.
+
+\mbox{\Hypertarget{class_c_socket_aafbbf6818bd94b8fda58b8a7ee8417c3}\label{class_c_socket_aafbbf6818bd94b8fda58b8a7ee8417c3}} 
+\index{C\+Socket@{C\+Socket}!recv@{recv}}
+\index{recv@{recv}!C\+Socket@{C\+Socket}}
+\subsubsection{\texorpdfstring{recv()}{recv()}}
+{\footnotesize\ttfamily int C\+Socket\+::recv (\begin{DoxyParamCaption}\item[{int}]{socket\+Id,  }\item[{char $\ast$\&}]{msg,  }\item[{int \&}]{length }\end{DoxyParamCaption})}
+
+
+
+发送与接收 
+
+
+
+在文件 Socket.\+cpp 第 63 行定义.
+
+\mbox{\Hypertarget{class_c_socket_ab034dd0ed69981237cc8385a6786d5ab}\label{class_c_socket_ab034dd0ed69981237cc8385a6786d5ab}} 
+\index{C\+Socket@{C\+Socket}!send@{send}}
+\index{send@{send}!C\+Socket@{C\+Socket}}
+\subsubsection{\texorpdfstring{send()}{send()}}
+{\footnotesize\ttfamily int C\+Socket\+::send (\begin{DoxyParamCaption}\item[{int}]{socket\+Id,  }\item[{char $\ast$}]{msg,  }\item[{int}]{length }\end{DoxyParamCaption})}
+
+
+
+在文件 Socket.\+cpp 第 71 行定义.
+
 \mbox{\Hypertarget{class_c_socket_abc15c93dfbf879f5dacc8b4b5dd951b1}\label{class_c_socket_abc15c93dfbf879f5dacc8b4b5dd951b1}} 
 \index{C\+Socket@{C\+Socket}!socket@{socket}}
 \index{socket@{socket}!C\+Socket@{C\+Socket}}
@@ -166,7 +279,11 @@ socket标识符
 \end{DoxyReturn}
 
 
+在文件 Socket.\+cpp 第 14 行定义.
+
+
+
 该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
 \item 
-G\+:/华中科技大学/计卓1401/大三下/计算机网络/\+Layer\+Interface/\+Socket/Socket.\+h\item 
-G\+:/华中科技大学/计卓1401/大三下/计算机网络/\+Layer\+Interface/\+Socket/Socket.\+cpp\end{DoxyCompactItemize}
+G\+:/华中科技大学/计卓1401/大三下/计算机网络/\+Layer\+Interface/\+Socket/\hyperlink{_socket_8h}{Socket.\+h}\item 
+G\+:/华中科技大学/计卓1401/大三下/计算机网络/\+Layer\+Interface/\+Socket/\hyperlink{_socket_8cpp}{Socket.\+cpp}\end{DoxyCompactItemize}

@@ -65,25 +65,155 @@ $(function() {
 <div class="title">MsgList类 参考</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>: 这个类是用于协议栈之间交流信息的队列，层与层之间传递信息就通过此队列来完成， 能对该队列进行的操作有判断空和满，向队列中发送数据（入队），和从队列中取出数据（出队）  
+ <a href="class_msg_list.html#details">更多...</a></p>
+
+<p><code>#include &lt;<a class="el" href="_layer_buffer_8h_source.html">LayerBuffer.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public 成员函数</h2></td></tr>
-<tr class="memitem:a04cda4a2294100a9f56b7957e29ef40c"><td class="memItemLeft" align="right" valign="top"><a id="a04cda4a2294100a9f56b7957e29ef40c"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>empty</b> ()</td></tr>
+<tr class="memitem:a46c9731fd0aff048b28f4e40a2731cad"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_msg_list.html#a46c9731fd0aff048b28f4e40a2731cad">MsgList</a> ()</td></tr>
+<tr class="separator:a46c9731fd0aff048b28f4e40a2731cad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af9729fa556cbf008c88287e7af6e9b47"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_msg_list.html#af9729fa556cbf008c88287e7af6e9b47">~MsgList</a> ()</td></tr>
+<tr class="separator:af9729fa556cbf008c88287e7af6e9b47"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a04cda4a2294100a9f56b7957e29ef40c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_msg_list.html#a04cda4a2294100a9f56b7957e29ef40c">empty</a> ()</td></tr>
 <tr class="separator:a04cda4a2294100a9f56b7957e29ef40c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abd998216b6c6566b0f06ab03806104aa"><td class="memItemLeft" align="right" valign="top"><a id="abd998216b6c6566b0f06ab03806104aa"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>full</b> ()</td></tr>
+<tr class="memitem:abd998216b6c6566b0f06ab03806104aa"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_msg_list.html#abd998216b6c6566b0f06ab03806104aa">full</a> ()</td></tr>
 <tr class="separator:abd998216b6c6566b0f06ab03806104aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:addbf007ab42e18737a91928e9d8efb84"><td class="memItemLeft" align="right" valign="top"><a id="addbf007ab42e18737a91928e9d8efb84"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>push</b> (<a class="el" href="class_datagram.html">Datagram</a> data)</td></tr>
+<tr class="memitem:addbf007ab42e18737a91928e9d8efb84"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_msg_list.html#addbf007ab42e18737a91928e9d8efb84">push</a> (<a class="el" href="class_datagram.html">Datagram</a> data)</td></tr>
 <tr class="separator:addbf007ab42e18737a91928e9d8efb84"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac5ceb41e509380bbdb449098de3da0fb"><td class="memItemLeft" align="right" valign="top"><a id="ac5ceb41e509380bbdb449098de3da0fb"></a>
-<a class="el" href="class_datagram.html">Datagram</a>&#160;</td><td class="memItemRight" valign="bottom"><b>pop</b> ()</td></tr>
+<tr class="memitem:ac5ceb41e509380bbdb449098de3da0fb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_datagram.html">Datagram</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_msg_list.html#ac5ceb41e509380bbdb449098de3da0fb">pop</a> ()</td></tr>
 <tr class="separator:ac5ceb41e509380bbdb449098de3da0fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>: 这个类是用于协议栈之间交流信息的队列，层与层之间传递信息就通过此队列来完成， 能对该队列进行的操作有判断空和满，向队列中发送数据（入队），和从队列中取出数据（出队） </p>
+<dl class="section author"><dt>作者</dt><dd>：Xiong_Joe </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>：2017/4/30 </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="_layer_buffer_8h_source.html">LayerBuffer.h</a> 第 <a class="el" href="_layer_buffer_8h_source.html#l00028">28</a> 行定义.</p>
+</div><h2 class="groupheader">构造及析构函数说明</h2>
+<a id="a46c9731fd0aff048b28f4e40a2731cad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a46c9731fd0aff048b28f4e40a2731cad">&#9670;&nbsp;</a></span>MsgList()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">MsgList::MsgList </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_layer_buffer_8cpp_source.html">LayerBuffer.cpp</a> 第 <a class="el" href="_layer_buffer_8cpp_source.html#l00005">5</a> 行定义.</p>
+
+</div>
+</div>
+<a id="af9729fa556cbf008c88287e7af6e9b47"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af9729fa556cbf008c88287e7af6e9b47">&#9670;&nbsp;</a></span>~MsgList()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">MsgList::~MsgList </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_layer_buffer_8cpp_source.html">LayerBuffer.cpp</a> 第 <a class="el" href="_layer_buffer_8cpp_source.html#l00009">9</a> 行定义.</p>
+
+</div>
+</div>
+<h2 class="groupheader">成员函数说明</h2>
+<a id="a04cda4a2294100a9f56b7957e29ef40c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a04cda4a2294100a9f56b7957e29ef40c">&#9670;&nbsp;</a></span>empty()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool MsgList::empty </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>缓冲队列是否为空 </p>
+
+<p class="definition">在文件 <a class="el" href="_layer_buffer_8cpp_source.html">LayerBuffer.cpp</a> 第 <a class="el" href="_layer_buffer_8cpp_source.html#l00042">42</a> 行定义.</p>
+
+</div>
+</div>
+<a id="abd998216b6c6566b0f06ab03806104aa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abd998216b6c6566b0f06ab03806104aa">&#9670;&nbsp;</a></span>full()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool MsgList::full </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>缓冲队列是否为满 </p>
+
+</div>
+</div>
+<a id="ac5ceb41e509380bbdb449098de3da0fb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac5ceb41e509380bbdb449098de3da0fb">&#9670;&nbsp;</a></span>pop()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_datagram.html">Datagram</a> MsgList::pop </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>从缓冲队列中取出数据 </p>
+
+<p class="definition">在文件 <a class="el" href="_layer_buffer_8cpp_source.html">LayerBuffer.cpp</a> 第 <a class="el" href="_layer_buffer_8cpp_source.html#l00029">29</a> 行定义.</p>
+
+</div>
+</div>
+<a id="addbf007ab42e18737a91928e9d8efb84"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#addbf007ab42e18737a91928e9d8efb84">&#9670;&nbsp;</a></span>push()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool MsgList::push </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_datagram.html">Datagram</a>&#160;</td>
+          <td class="paramname"><em>data</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>向缓冲队列中发送数据 </p>
+
+<p class="definition">在文件 <a class="el" href="_layer_buffer_8cpp_source.html">LayerBuffer.cpp</a> 第 <a class="el" href="_layer_buffer_8cpp_source.html#l00014">14</a> 行定义.</p>
+
+</div>
+</div>
 <hr/>该类的文档由以下文件生成:<ul>
 <li>G:/华中科技大学/计卓1401/大三下/计算机网络/LayerInterface/LayerInterface/<a class="el" href="_layer_buffer_8h_source.html">LayerBuffer.h</a></li>
-<li>G:/华中科技大学/计卓1401/大三下/计算机网络/LayerInterface/LayerInterface/LayerBuffer.cpp</li>
+<li>G:/华中科技大学/计卓1401/大三下/计算机网络/LayerInterface/LayerInterface/<a class="el" href="_layer_buffer_8cpp_source.html">LayerBuffer.cpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

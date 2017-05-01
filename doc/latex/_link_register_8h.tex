@@ -1,0 +1,109 @@
+\hypertarget{_link_register_8h}{}\section{G\+:/华中科技大学/计卓1401/大三下/计算机网络/\+Layer\+Interface/\+T\+C\+P\+Layer/\+Link\+Register.h 文件参考}
+\label{_link_register_8h}\index{G\+:/华中科技大学/计卓1401/大三下/计算机网络/\+Layer\+Interface/\+T\+C\+P\+Layer/\+Link\+Register.\+h@{G\+:/华中科技大学/计卓1401/大三下/计算机网络/\+Layer\+Interface/\+T\+C\+P\+Layer/\+Link\+Register.\+h}}
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include $<$list$>$}\newline
+\subsection*{类}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{class_tuple}{Tuple}
+\item 
+class \hyperlink{class_link_register}{Link\+Register}
+\end{DoxyCompactItemize}
+\subsection*{枚举}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{_link_register_8h_a1bbbec1fd33a447cb44ba1e9b39741b9}{S\+E\+V\+E\+R\+\_\+\+S\+T\+AT} \{ \newline
+\hyperlink{_link_register_8h_a1bbbec1fd33a447cb44ba1e9b39741b9a929f0327e17604ce9713b2a6117bd603}{C\+L\+O\+S\+ED} = 0, 
+\hyperlink{_link_register_8h_a1bbbec1fd33a447cb44ba1e9b39741b9a331ec9878c0ed22e62de969d4b96b5bb}{L\+I\+S\+T\+EN}, 
+\hyperlink{_link_register_8h_a1bbbec1fd33a447cb44ba1e9b39741b9a1ee0633a9749f202ccb75862d3aefc85}{S\+Y\+N\+\_\+\+R\+C\+VD}, 
+\hyperlink{_link_register_8h_a1bbbec1fd33a447cb44ba1e9b39741b9a81d0d81381abb711562b19a00a4cb9af}{E\+S\+T\+A\+B\+L\+I\+S\+H\+ED}, 
+\newline
+\hyperlink{_link_register_8h_a1bbbec1fd33a447cb44ba1e9b39741b9adbf32c37bc28f37e44d0fe611d341178}{C\+L\+O\+S\+E\+\_\+\+W\+A\+IT}, 
+\hyperlink{_link_register_8h_a1bbbec1fd33a447cb44ba1e9b39741b9a1b588a108a727c1de55f818cb9ff57eb}{L\+A\+S\+T\+\_\+\+A\+CK}
+ \}
+\item 
+enum \hyperlink{_link_register_8h_a5d3296cc538b52ca280ea95c1aead868}{C\+L\+I\+E\+N\+T\+\_\+\+S\+T\+AT} \{ \newline
+\hyperlink{_link_register_8h_a5d3296cc538b52ca280ea95c1aead868aab1f1cc87ee652132c06a2e34340e714}{C\+L\+O\+S\+E\+D1} = 0, 
+\hyperlink{_link_register_8h_a5d3296cc538b52ca280ea95c1aead868a3884e45cc6d937b234e2a8c2c933d7e5}{S\+Y\+N\+\_\+\+S\+E\+NT}, 
+\hyperlink{_link_register_8h_a5d3296cc538b52ca280ea95c1aead868af08c04353af30c16d8144502145b1d46}{E\+S\+T\+A\+B\+L\+I\+S\+H\+E\+D1} = 3, 
+\hyperlink{_link_register_8h_a5d3296cc538b52ca280ea95c1aead868a2ca754767c3666fc17fe7f5bf49e7518}{F\+I\+N\+\_\+\+W\+A\+I\+T\+\_\+1}, 
+\newline
+\hyperlink{_link_register_8h_a5d3296cc538b52ca280ea95c1aead868a1ff416801732ff573184491c86ee7032}{F\+I\+N\+\_\+\+W\+A\+I\+T\+\_\+2}, 
+\hyperlink{_link_register_8h_a5d3296cc538b52ca280ea95c1aead868a799374a9f3fbdfc7f7e92c0f9c5627f7}{T\+I\+M\+E\+\_\+\+W\+A\+IT}
+ \}
+\end{DoxyCompactItemize}
+
+
+\subsection{枚举类型说明}
+\mbox{\Hypertarget{_link_register_8h_a5d3296cc538b52ca280ea95c1aead868}\label{_link_register_8h_a5d3296cc538b52ca280ea95c1aead868}} 
+\index{Link\+Register.\+h@{Link\+Register.\+h}!C\+L\+I\+E\+N\+T\+\_\+\+S\+T\+AT@{C\+L\+I\+E\+N\+T\+\_\+\+S\+T\+AT}}
+\index{C\+L\+I\+E\+N\+T\+\_\+\+S\+T\+AT@{C\+L\+I\+E\+N\+T\+\_\+\+S\+T\+AT}!Link\+Register.\+h@{Link\+Register.\+h}}
+\subsubsection{\texorpdfstring{C\+L\+I\+E\+N\+T\+\_\+\+S\+T\+AT}{CLIENT\_STAT}}
+{\footnotesize\ttfamily enum \hyperlink{_link_register_8h_a5d3296cc538b52ca280ea95c1aead868}{C\+L\+I\+E\+N\+T\+\_\+\+S\+T\+AT}}
+
+\begin{DoxyEnumFields}{枚举值}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{C\+L\+O\+S\+E\+D1@{C\+L\+O\+S\+E\+D1}!Link\+Register.\+h@{Link\+Register.\+h}}\index{Link\+Register.\+h@{Link\+Register.\+h}!C\+L\+O\+S\+E\+D1@{C\+L\+O\+S\+E\+D1}}}\mbox{\Hypertarget{_link_register_8h_a5d3296cc538b52ca280ea95c1aead868aab1f1cc87ee652132c06a2e34340e714}\label{_link_register_8h_a5d3296cc538b52ca280ea95c1aead868aab1f1cc87ee652132c06a2e34340e714}} 
+C\+L\+O\+S\+E\+D1&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{S\+Y\+N\+\_\+\+S\+E\+NT@{S\+Y\+N\+\_\+\+S\+E\+NT}!Link\+Register.\+h@{Link\+Register.\+h}}\index{Link\+Register.\+h@{Link\+Register.\+h}!S\+Y\+N\+\_\+\+S\+E\+NT@{S\+Y\+N\+\_\+\+S\+E\+NT}}}\mbox{\Hypertarget{_link_register_8h_a5d3296cc538b52ca280ea95c1aead868a3884e45cc6d937b234e2a8c2c933d7e5}\label{_link_register_8h_a5d3296cc538b52ca280ea95c1aead868a3884e45cc6d937b234e2a8c2c933d7e5}} 
+S\+Y\+N\+\_\+\+S\+E\+NT&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+S\+T\+A\+B\+L\+I\+S\+H\+E\+D1@{E\+S\+T\+A\+B\+L\+I\+S\+H\+E\+D1}!Link\+Register.\+h@{Link\+Register.\+h}}\index{Link\+Register.\+h@{Link\+Register.\+h}!E\+S\+T\+A\+B\+L\+I\+S\+H\+E\+D1@{E\+S\+T\+A\+B\+L\+I\+S\+H\+E\+D1}}}\mbox{\Hypertarget{_link_register_8h_a5d3296cc538b52ca280ea95c1aead868af08c04353af30c16d8144502145b1d46}\label{_link_register_8h_a5d3296cc538b52ca280ea95c1aead868af08c04353af30c16d8144502145b1d46}} 
+E\+S\+T\+A\+B\+L\+I\+S\+H\+E\+D1&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{F\+I\+N\+\_\+\+W\+A\+I\+T\+\_\+1@{F\+I\+N\+\_\+\+W\+A\+I\+T\+\_\+1}!Link\+Register.\+h@{Link\+Register.\+h}}\index{Link\+Register.\+h@{Link\+Register.\+h}!F\+I\+N\+\_\+\+W\+A\+I\+T\+\_\+1@{F\+I\+N\+\_\+\+W\+A\+I\+T\+\_\+1}}}\mbox{\Hypertarget{_link_register_8h_a5d3296cc538b52ca280ea95c1aead868a2ca754767c3666fc17fe7f5bf49e7518}\label{_link_register_8h_a5d3296cc538b52ca280ea95c1aead868a2ca754767c3666fc17fe7f5bf49e7518}} 
+F\+I\+N\+\_\+\+W\+A\+I\+T\+\_\+1&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{F\+I\+N\+\_\+\+W\+A\+I\+T\+\_\+2@{F\+I\+N\+\_\+\+W\+A\+I\+T\+\_\+2}!Link\+Register.\+h@{Link\+Register.\+h}}\index{Link\+Register.\+h@{Link\+Register.\+h}!F\+I\+N\+\_\+\+W\+A\+I\+T\+\_\+2@{F\+I\+N\+\_\+\+W\+A\+I\+T\+\_\+2}}}\mbox{\Hypertarget{_link_register_8h_a5d3296cc538b52ca280ea95c1aead868a1ff416801732ff573184491c86ee7032}\label{_link_register_8h_a5d3296cc538b52ca280ea95c1aead868a1ff416801732ff573184491c86ee7032}} 
+F\+I\+N\+\_\+\+W\+A\+I\+T\+\_\+2&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{T\+I\+M\+E\+\_\+\+W\+A\+IT@{T\+I\+M\+E\+\_\+\+W\+A\+IT}!Link\+Register.\+h@{Link\+Register.\+h}}\index{Link\+Register.\+h@{Link\+Register.\+h}!T\+I\+M\+E\+\_\+\+W\+A\+IT@{T\+I\+M\+E\+\_\+\+W\+A\+IT}}}\mbox{\Hypertarget{_link_register_8h_a5d3296cc538b52ca280ea95c1aead868a799374a9f3fbdfc7f7e92c0f9c5627f7}\label{_link_register_8h_a5d3296cc538b52ca280ea95c1aead868a799374a9f3fbdfc7f7e92c0f9c5627f7}} 
+T\+I\+M\+E\+\_\+\+W\+A\+IT&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+在文件 Link\+Register.\+h 第 15 行定义.
+
+\mbox{\Hypertarget{_link_register_8h_a1bbbec1fd33a447cb44ba1e9b39741b9}\label{_link_register_8h_a1bbbec1fd33a447cb44ba1e9b39741b9}} 
+\index{Link\+Register.\+h@{Link\+Register.\+h}!S\+E\+V\+E\+R\+\_\+\+S\+T\+AT@{S\+E\+V\+E\+R\+\_\+\+S\+T\+AT}}
+\index{S\+E\+V\+E\+R\+\_\+\+S\+T\+AT@{S\+E\+V\+E\+R\+\_\+\+S\+T\+AT}!Link\+Register.\+h@{Link\+Register.\+h}}
+\subsubsection{\texorpdfstring{S\+E\+V\+E\+R\+\_\+\+S\+T\+AT}{SEVER\_STAT}}
+{\footnotesize\ttfamily enum \hyperlink{_link_register_8h_a1bbbec1fd33a447cb44ba1e9b39741b9}{S\+E\+V\+E\+R\+\_\+\+S\+T\+AT}}
+
+\begin{DoxyEnumFields}{枚举值}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{C\+L\+O\+S\+ED@{C\+L\+O\+S\+ED}!Link\+Register.\+h@{Link\+Register.\+h}}\index{Link\+Register.\+h@{Link\+Register.\+h}!C\+L\+O\+S\+ED@{C\+L\+O\+S\+ED}}}\mbox{\Hypertarget{_link_register_8h_a1bbbec1fd33a447cb44ba1e9b39741b9a929f0327e17604ce9713b2a6117bd603}\label{_link_register_8h_a1bbbec1fd33a447cb44ba1e9b39741b9a929f0327e17604ce9713b2a6117bd603}} 
+C\+L\+O\+S\+ED&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{L\+I\+S\+T\+EN@{L\+I\+S\+T\+EN}!Link\+Register.\+h@{Link\+Register.\+h}}\index{Link\+Register.\+h@{Link\+Register.\+h}!L\+I\+S\+T\+EN@{L\+I\+S\+T\+EN}}}\mbox{\Hypertarget{_link_register_8h_a1bbbec1fd33a447cb44ba1e9b39741b9a331ec9878c0ed22e62de969d4b96b5bb}\label{_link_register_8h_a1bbbec1fd33a447cb44ba1e9b39741b9a331ec9878c0ed22e62de969d4b96b5bb}} 
+L\+I\+S\+T\+EN&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{S\+Y\+N\+\_\+\+R\+C\+VD@{S\+Y\+N\+\_\+\+R\+C\+VD}!Link\+Register.\+h@{Link\+Register.\+h}}\index{Link\+Register.\+h@{Link\+Register.\+h}!S\+Y\+N\+\_\+\+R\+C\+VD@{S\+Y\+N\+\_\+\+R\+C\+VD}}}\mbox{\Hypertarget{_link_register_8h_a1bbbec1fd33a447cb44ba1e9b39741b9a1ee0633a9749f202ccb75862d3aefc85}\label{_link_register_8h_a1bbbec1fd33a447cb44ba1e9b39741b9a1ee0633a9749f202ccb75862d3aefc85}} 
+S\+Y\+N\+\_\+\+R\+C\+VD&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+S\+T\+A\+B\+L\+I\+S\+H\+ED@{E\+S\+T\+A\+B\+L\+I\+S\+H\+ED}!Link\+Register.\+h@{Link\+Register.\+h}}\index{Link\+Register.\+h@{Link\+Register.\+h}!E\+S\+T\+A\+B\+L\+I\+S\+H\+ED@{E\+S\+T\+A\+B\+L\+I\+S\+H\+ED}}}\mbox{\Hypertarget{_link_register_8h_a1bbbec1fd33a447cb44ba1e9b39741b9a81d0d81381abb711562b19a00a4cb9af}\label{_link_register_8h_a1bbbec1fd33a447cb44ba1e9b39741b9a81d0d81381abb711562b19a00a4cb9af}} 
+E\+S\+T\+A\+B\+L\+I\+S\+H\+ED&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{C\+L\+O\+S\+E\+\_\+\+W\+A\+IT@{C\+L\+O\+S\+E\+\_\+\+W\+A\+IT}!Link\+Register.\+h@{Link\+Register.\+h}}\index{Link\+Register.\+h@{Link\+Register.\+h}!C\+L\+O\+S\+E\+\_\+\+W\+A\+IT@{C\+L\+O\+S\+E\+\_\+\+W\+A\+IT}}}\mbox{\Hypertarget{_link_register_8h_a1bbbec1fd33a447cb44ba1e9b39741b9adbf32c37bc28f37e44d0fe611d341178}\label{_link_register_8h_a1bbbec1fd33a447cb44ba1e9b39741b9adbf32c37bc28f37e44d0fe611d341178}} 
+C\+L\+O\+S\+E\+\_\+\+W\+A\+IT&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{L\+A\+S\+T\+\_\+\+A\+CK@{L\+A\+S\+T\+\_\+\+A\+CK}!Link\+Register.\+h@{Link\+Register.\+h}}\index{Link\+Register.\+h@{Link\+Register.\+h}!L\+A\+S\+T\+\_\+\+A\+CK@{L\+A\+S\+T\+\_\+\+A\+CK}}}\mbox{\Hypertarget{_link_register_8h_a1bbbec1fd33a447cb44ba1e9b39741b9a1b588a108a727c1de55f818cb9ff57eb}\label{_link_register_8h_a1bbbec1fd33a447cb44ba1e9b39741b9a1b588a108a727c1de55f818cb9ff57eb}} 
+L\+A\+S\+T\+\_\+\+A\+CK&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+在文件 Link\+Register.\+h 第 5 行定义.
+

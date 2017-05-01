@@ -1,0 +1,98 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Internet Protocol Stack: G:/华中科技大学/计卓1401/大三下/计算机网络/LayerInterface/TCPLayer/TCPLayer.cpp 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Internet Protocol Stack
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_f1a073ba2cf6ca9bb5fe777c4f3439f6.html">TCPLayer</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">TCPLayer.cpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_t_c_p_layer_8cpp.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">// TCPLayer.cpp : Defines the exported functions for the DLL application.</span></div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">//</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_t_c_p_layer_2stdafx_8h.html">stdafx.h</a>&quot;</span></div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_t_c_p_layer_8h.html">TCPLayer.h</a>&quot;</span></div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#pragma comment(lib, &quot;../Debug/IPLayer.lib&quot;)</span></div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &quot;../IPLayer/IPLayer.h&quot;</span></div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;</div><div class="line"><a name="l00009"></a><span class="lineno"><a class="line" href="class_c_t_c_p.html#a7dee32e3cae74e448df0b4d09fea3d43">    9</a></span>&#160;<a class="code" href="class_c_t_c_p.html#a7dee32e3cae74e448df0b4d09fea3d43">CTCP::CTCP</a>(<a class="code" href="class_msg_list.html">MsgList</a> &amp;sendBuf, <a class="code" href="class_msg_list.html">MsgList</a> &amp;rcvBuf) : <a class="code" href="class_c_layer_interface.html">CLayerInterface</a>(sendBuf, rcvBuf)</div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;{</div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    <a class="code" href="class_c_layer_interface.html#a17da1d50a68115d810b8079f1c6e22d7">m_pClientSendBuf</a> = sendBuf;</div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    <a class="code" href="class_c_layer_interface.html#af9509b975b79a1c15a5a5523c03eeaaa">m_pClientRcvBuf</a> = rcvBuf;</div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <a class="code" href="class_c_layer_interface.html#a075d83e440db42925a85d17f9e3e9a0b">pServerLayer</a> = <span class="keyword">new</span> <a class="code" href="class_c_i_p_layer.html">CIPLayer</a>(<a class="code" href="class_c_layer_interface.html#ab85631c424f3a77311ca4532db18d8a6">mySendBuf</a>, <a class="code" href="class_c_layer_interface.html#a6b35060c9d58ff2a0f394e1c54301ae8">myRecvBuf</a>);</div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <a class="code" href="class_c_layer_interface.html#ab5e0e1580b714b045664a8051373b8f2">bHasServerLayer</a> = <span class="keyword">true</span>;</div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <a class="code" href="class_c_layer_interface.html#a21292dad42f0048a08a19eeeba0d68cc">bStop</a> = <span class="keyword">false</span>;</div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <a class="code" href="class_c_layer_interface.html#a7057ebc9a57429562f4642b5e8586a52">m_nMsgHeadLen</a> = 80;</div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <a class="code" href="class_c_layer_interface.html#a6c9d5fd635c29705c2cb9bea7c5a68f5">m_nMsgTailLen</a> = 0;</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    m_TCPConnect.<a class="code" href="class_c_t_c_p_connect.html#a0418f1607ff29af6941d080cf5896df7">m_pCTCP</a> = <span class="keyword">this</span>;</div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    m_pRDTransfer-&gt;<a class="code" href="class_c_r_d_transfer.html#a738fa552807680744a202da502ec61fa">m_pCTCP</a> = <span class="keyword">this</span>;</div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;}</div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div><div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="class_c_t_c_p.html#a5481af8e2b94bd236b2673eae11d160f">   24</a></span>&#160;<a class="code" href="class_c_t_c_p.html#a5481af8e2b94bd236b2673eae11d160f">CTCP::~CTCP</a>()</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;{</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;}</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div><div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="class_c_t_c_p.html#a0c68800a3b6317cbe74aa2cb28ea3d9c">   29</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_c_t_c_p.html#a0c68800a3b6317cbe74aa2cb28ea3d9c">CTCP::addHead</a>()</div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;{</div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="keywordtype">char</span> data[] = <span class="stringliteral">&quot;TransportLayer head --- &quot;</span>;</div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    memcpy(<a class="code" href="class_c_layer_interface.html#a6c3c04e1123c94ff609dafbd2429dfee">m_pDatagram</a>-&gt;<a class="code" href="class_datagram.html#ac71eedd18cac5107f545043abd2d2655">pHead</a>, data, <span class="keyword">sizeof</span>(data));</div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;}</div><div class="ttc" id="class_c_layer_interface_html_a6c9d5fd635c29705c2cb9bea7c5a68f5"><div class="ttname"><a href="class_c_layer_interface.html#a6c9d5fd635c29705c2cb9bea7c5a68f5">CLayerInterface::m_nMsgTailLen</a></div><div class="ttdeci">int m_nMsgTailLen</div><div class="ttdef"><b>Definition:</b> <a href="_layer_interface_8h_source.html#l00063">LayerInterface.h:63</a></div></div>
+<div class="ttc" id="class_c_t_c_p_connect_html_a0418f1607ff29af6941d080cf5896df7"><div class="ttname"><a href="class_c_t_c_p_connect.html#a0418f1607ff29af6941d080cf5896df7">CTCPConnect::m_pCTCP</a></div><div class="ttdeci">CLayerInterface * m_pCTCP</div><div class="ttdef"><b>Definition:</b> <a href="_t_c_p_connect_8h_source.html#l00010">TCPConnect.h:10</a></div></div>
+<div class="ttc" id="_t_c_p_layer_8h_html"><div class="ttname"><a href="_t_c_p_layer_8h.html">TCPLayer.h</a></div></div>
+<div class="ttc" id="_t_c_p_layer_2stdafx_8h_html"><div class="ttname"><a href="_t_c_p_layer_2stdafx_8h.html">stdafx.h</a></div></div>
+<div class="ttc" id="class_c_layer_interface_html_ab85631c424f3a77311ca4532db18d8a6"><div class="ttname"><a href="class_c_layer_interface.html#ab85631c424f3a77311ca4532db18d8a6">CLayerInterface::mySendBuf</a></div><div class="ttdeci">MsgList mySendBuf</div><div class="ttdef"><b>Definition:</b> <a href="_layer_interface_8h_source.html#l00066">LayerInterface.h:66</a></div></div>
+<div class="ttc" id="class_c_layer_interface_html_a075d83e440db42925a85d17f9e3e9a0b"><div class="ttname"><a href="class_c_layer_interface.html#a075d83e440db42925a85d17f9e3e9a0b">CLayerInterface::pServerLayer</a></div><div class="ttdeci">CLayerInterface * pServerLayer</div><div class="ttdef"><b>Definition:</b> <a href="_layer_interface_8h_source.html#l00058">LayerInterface.h:58</a></div></div>
+<div class="ttc" id="class_datagram_html_ac71eedd18cac5107f545043abd2d2655"><div class="ttname"><a href="class_datagram.html#ac71eedd18cac5107f545043abd2d2655">Datagram::pHead</a></div><div class="ttdeci">char * pHead</div><div class="ttdef"><b>Definition:</b> <a href="_datagram_8h_source.html#l00024">Datagram.h:24</a></div></div>
+<div class="ttc" id="class_c_t_c_p_html_a5481af8e2b94bd236b2673eae11d160f"><div class="ttname"><a href="class_c_t_c_p.html#a5481af8e2b94bd236b2673eae11d160f">CTCP::~CTCP</a></div><div class="ttdeci">~CTCP()</div><div class="ttdef"><b>Definition:</b> <a href="_t_c_p_layer_8cpp_source.html#l00024">TCPLayer.cpp:24</a></div></div>
+<div class="ttc" id="class_c_layer_interface_html_a17da1d50a68115d810b8079f1c6e22d7"><div class="ttname"><a href="class_c_layer_interface.html#a17da1d50a68115d810b8079f1c6e22d7">CLayerInterface::m_pClientSendBuf</a></div><div class="ttdeci">MsgList &amp; m_pClientSendBuf</div><div class="ttdef"><b>Definition:</b> <a href="_layer_interface_8h_source.html#l00069">LayerInterface.h:69</a></div></div>
+<div class="ttc" id="class_msg_list_html"><div class="ttname"><a href="class_msg_list.html">MsgList</a></div><div class="ttdoc">: 这个类是用于协议栈之间交流信息的队列，层与层之间传递信息就通过此队列来完成， 能对该队列进行的操作有...</div><div class="ttdef"><b>Definition:</b> <a href="_layer_buffer_8h_source.html#l00028">LayerBuffer.h:28</a></div></div>
+<div class="ttc" id="class_c_layer_interface_html_a21292dad42f0048a08a19eeeba0d68cc"><div class="ttname"><a href="class_c_layer_interface.html#a21292dad42f0048a08a19eeeba0d68cc">CLayerInterface::bStop</a></div><div class="ttdeci">bool bStop</div><div class="ttdef"><b>Definition:</b> <a href="_layer_interface_8h_source.html#l00057">LayerInterface.h:57</a></div></div>
+<div class="ttc" id="class_c_layer_interface_html"><div class="ttname"><a href="class_c_layer_interface.html">CLayerInterface</a></div><div class="ttdef"><b>Definition:</b> <a href="_layer_interface_8h_source.html#l00028">LayerInterface.h:28</a></div></div>
+<div class="ttc" id="class_c_layer_interface_html_ab5e0e1580b714b045664a8051373b8f2"><div class="ttname"><a href="class_c_layer_interface.html#ab5e0e1580b714b045664a8051373b8f2">CLayerInterface::bHasServerLayer</a></div><div class="ttdeci">bool bHasServerLayer</div><div class="ttdef"><b>Definition:</b> <a href="_layer_interface_8h_source.html#l00059">LayerInterface.h:59</a></div></div>
+<div class="ttc" id="class_c_i_p_layer_html"><div class="ttname"><a href="class_c_i_p_layer.html">CIPLayer</a></div><div class="ttdef"><b>Definition:</b> <a href="_i_p_layer_8h_source.html#l00013">IPLayer.h:13</a></div></div>
+<div class="ttc" id="class_c_layer_interface_html_a6b35060c9d58ff2a0f394e1c54301ae8"><div class="ttname"><a href="class_c_layer_interface.html#a6b35060c9d58ff2a0f394e1c54301ae8">CLayerInterface::myRecvBuf</a></div><div class="ttdeci">MsgList myRecvBuf</div><div class="ttdef"><b>Definition:</b> <a href="_layer_interface_8h_source.html#l00067">LayerInterface.h:67</a></div></div>
+<div class="ttc" id="class_c_t_c_p_html_a7dee32e3cae74e448df0b4d09fea3d43"><div class="ttname"><a href="class_c_t_c_p.html#a7dee32e3cae74e448df0b4d09fea3d43">CTCP::CTCP</a></div><div class="ttdeci">CTCP(MsgList &amp;sendBuf, MsgList &amp;rcvBuf)</div><div class="ttdef"><b>Definition:</b> <a href="_t_c_p_layer_8cpp_source.html#l00009">TCPLayer.cpp:9</a></div></div>
+<div class="ttc" id="class_c_layer_interface_html_a6c3c04e1123c94ff609dafbd2429dfee"><div class="ttname"><a href="class_c_layer_interface.html#a6c3c04e1123c94ff609dafbd2429dfee">CLayerInterface::m_pDatagram</a></div><div class="ttdeci">Datagram * m_pDatagram</div><div class="ttdef"><b>Definition:</b> <a href="_layer_interface_8h_source.html#l00060">LayerInterface.h:60</a></div></div>
+<div class="ttc" id="class_c_layer_interface_html_a7057ebc9a57429562f4642b5e8586a52"><div class="ttname"><a href="class_c_layer_interface.html#a7057ebc9a57429562f4642b5e8586a52">CLayerInterface::m_nMsgHeadLen</a></div><div class="ttdeci">int m_nMsgHeadLen</div><div class="ttdef"><b>Definition:</b> <a href="_layer_interface_8h_source.html#l00062">LayerInterface.h:62</a></div></div>
+<div class="ttc" id="class_c_t_c_p_html_a0c68800a3b6317cbe74aa2cb28ea3d9c"><div class="ttname"><a href="class_c_t_c_p.html#a0c68800a3b6317cbe74aa2cb28ea3d9c">CTCP::addHead</a></div><div class="ttdeci">void addHead()</div><div class="ttdef"><b>Definition:</b> <a href="_t_c_p_layer_8cpp_source.html#l00029">TCPLayer.cpp:29</a></div></div>
+<div class="ttc" id="class_c_layer_interface_html_af9509b975b79a1c15a5a5523c03eeaaa"><div class="ttname"><a href="class_c_layer_interface.html#af9509b975b79a1c15a5a5523c03eeaaa">CLayerInterface::m_pClientRcvBuf</a></div><div class="ttdeci">MsgList &amp; m_pClientRcvBuf</div><div class="ttdef"><b>Definition:</b> <a href="_layer_interface_8h_source.html#l00070">LayerInterface.h:70</a></div></div>
+<div class="ttc" id="class_c_r_d_transfer_html_a738fa552807680744a202da502ec61fa"><div class="ttname"><a href="class_c_r_d_transfer.html#a738fa552807680744a202da502ec61fa">CRDTransfer::m_pCTCP</a></div><div class="ttdeci">CLayerInterface * m_pCTCP</div><div class="ttdef"><b>Definition:</b> <a href="_r_d_transfer_8h_source.html#l00014">RDTransfer.h:14</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

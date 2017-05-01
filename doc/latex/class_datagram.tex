@@ -1,53 +1,83 @@
 \hypertarget{class_datagram}{}\section{Datagram类 参考}
 \label{class_datagram}\index{Datagram@{Datagram}}
+
+
+\+: 这个类是数据报类，用来存储和转发数据，一方面要对上层的数据包进行包装，加入头部； 另一方面，要对下层的数据包进行拆包，将包头信息去除，得到数据  
+
+
+
+
+{\ttfamily \#include $<$Datagram.\+h$>$}
+
 \subsection*{Public 成员函数}
 \begin{DoxyCompactItemize}
 \item 
+\hyperlink{class_datagram_a0935aec339a27b847c87dc6120613594}{Datagram} ()
+\item 
 \hyperlink{class_datagram_a4f1b9ef3e5a00a11e9b206665c5968dd}{Datagram} (int i\+Msg\+Len)
 \begin{DoxyCompactList}\small\item\em 数据报的构造函数 \end{DoxyCompactList}\item 
-void \hyperlink{class_datagram_afd6c80ab2f1f89bf6883bc552777668f}{cpy\+Data} (char $\ast$p\+Data)
+void \hyperlink{class_datagram_afd6c80ab2f1f89bf6883bc552777668f}{cpy\+Data} (char $\ast$\hyperlink{class_datagram_a50bba5269b8d107e9be3147f28a9229c}{p\+Data})
 \begin{DoxyCompactList}\small\item\em 数据报的拷贝 \end{DoxyCompactList}\item 
 void \hyperlink{class_datagram_a92f5c858fa5f872bc7576346b932f77a}{rmv\+Head\+Buf} ()
 \begin{DoxyCompactList}\small\item\em 数据报的去头去尾操作 \end{DoxyCompactList}\item 
 void \hyperlink{class_datagram_ad54ae1c5f2522a9d6ab2145bfa33e7e4}{create\+Buf} (\hyperlink{class_datagram}{Datagram} datagram)
 \begin{DoxyCompactList}\small\item\em 数据报的创建操作 \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{class_datagram_ab3912f9748416eac75309fae598017c8}\label{class_datagram_ab3912f9748416eac75309fae598017c8}} 
 void \hyperlink{class_datagram_ab3912f9748416eac75309fae598017c8}{release} ()
 \begin{DoxyCompactList}\small\item\em 数据报的释放 \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{class_datagram_aac2187f8896acdd5dc5424b8934d454a}\label{class_datagram_aac2187f8896acdd5dc5424b8934d454a}} 
-int {\bfseries get\+Id} ()
+int \hyperlink{class_datagram_aac2187f8896acdd5dc5424b8934d454a}{get\+Id} ()
 \item 
-\mbox{\Hypertarget{class_datagram_a396a4dba1b8d973ce0d8951ca885872c}\label{class_datagram_a396a4dba1b8d973ce0d8951ca885872c}} 
-void {\bfseries set\+Id} (int id)
+void \hyperlink{class_datagram_a396a4dba1b8d973ce0d8951ca885872c}{set\+Id} (int id)
 \end{DoxyCompactItemize}
 \subsection*{Public 属性}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{class_datagram_ac71eedd18cac5107f545043abd2d2655}\label{class_datagram_ac71eedd18cac5107f545043abd2d2655}} 
-char $\ast$ {\bfseries p\+Head}
+char $\ast$ \hyperlink{class_datagram_ac71eedd18cac5107f545043abd2d2655}{p\+Head}
 \item 
-\mbox{\Hypertarget{class_datagram_a50bba5269b8d107e9be3147f28a9229c}\label{class_datagram_a50bba5269b8d107e9be3147f28a9229c}} 
-char $\ast$ {\bfseries p\+Data}
+char $\ast$ \hyperlink{class_datagram_a50bba5269b8d107e9be3147f28a9229c}{p\+Data}
 \item 
-\mbox{\Hypertarget{class_datagram_af4d0826f99eb27b443a48ddc21e6815f}\label{class_datagram_af4d0826f99eb27b443a48ddc21e6815f}} 
-char $\ast$ {\bfseries p\+Tail}
+char $\ast$ \hyperlink{class_datagram_af4d0826f99eb27b443a48ddc21e6815f}{p\+Tail}
 \item 
-\mbox{\Hypertarget{class_datagram_aab7f89c5363d398b03ae8f8709e3e8c6}\label{class_datagram_aab7f89c5363d398b03ae8f8709e3e8c6}} 
-int {\bfseries m\+\_\+n\+Meg\+Len}
+int \hyperlink{class_datagram_aab7f89c5363d398b03ae8f8709e3e8c6}{m\+\_\+n\+Meg\+Len}
 \item 
-\mbox{\Hypertarget{class_datagram_afeb0a8abee7a260fc81f2cdf8978e0b2}\label{class_datagram_afeb0a8abee7a260fc81f2cdf8978e0b2}} 
-int {\bfseries m\+\_\+n\+Msg\+Head\+Len}
+int \hyperlink{class_datagram_afeb0a8abee7a260fc81f2cdf8978e0b2}{m\+\_\+n\+Msg\+Head\+Len}
 \item 
-\mbox{\Hypertarget{class_datagram_aaa9c1b32f5fb0414778af41cc01a6b9f}\label{class_datagram_aaa9c1b32f5fb0414778af41cc01a6b9f}} 
-int {\bfseries m\+\_\+n\+Msg\+Tail\+Len}
+int \hyperlink{class_datagram_aaa9c1b32f5fb0414778af41cc01a6b9f}{m\+\_\+n\+Msg\+Tail\+Len}
 \end{DoxyCompactItemize}
 
 
+\subsection{详细描述}
+\+: 这个类是数据报类，用来存储和转发数据，一方面要对上层的数据包进行包装，加入头部； 另一方面，要对下层的数据包进行拆包，将包头信息去除，得到数据 
+
+\begin{DoxyAuthor}{作者}
+：\+Xiong\+\_\+\+Joe 
+\end{DoxyAuthor}
+\begin{DoxyDate}{日期}
+：2017/5/1 
+\end{DoxyDate}
+\begin{DoxyAttention}{注意}
+\+: 此处只对协议栈的中间层提供了数据内存的转储和释放功能，但当编写数据链路层或 应用层时，应该注意是够需要回收内存垃圾 
+\end{DoxyAttention}
+
+
+在文件 Datagram.\+h 第 21 行定义.
+
+
+
 \subsection{构造及析构函数说明}
+\mbox{\Hypertarget{class_datagram_a0935aec339a27b847c87dc6120613594}\label{class_datagram_a0935aec339a27b847c87dc6120613594}} 
+\index{Datagram@{Datagram}!Datagram@{Datagram}}
+\index{Datagram@{Datagram}!Datagram@{Datagram}}
+\subsubsection{\texorpdfstring{Datagram()}{Datagram()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Datagram\+::\+Datagram (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 Datagram.\+h 第 31 行定义.
+
 \mbox{\Hypertarget{class_datagram_a4f1b9ef3e5a00a11e9b206665c5968dd}\label{class_datagram_a4f1b9ef3e5a00a11e9b206665c5968dd}} 
 \index{Datagram@{Datagram}!Datagram@{Datagram}}
 \index{Datagram@{Datagram}!Datagram@{Datagram}}
-\subsubsection{\texorpdfstring{Datagram()}{Datagram()}}
+\subsubsection{\texorpdfstring{Datagram()}{Datagram()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily Datagram\+::\+Datagram (\begin{DoxyParamCaption}\item[{int}]{i\+Msg\+Len }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
 
@@ -59,6 +89,10 @@ int {\bfseries m\+\_\+n\+Msg\+Tail\+Len}
 \mbox{\tt in}  & {\em i\+Msg\+Len} & 数据报长度 \\
 \hline
 \end{DoxyParams}
+
+
+在文件 Datagram.\+h 第 37 行定义.
+
 
 
 \subsection{成员函数说明}
@@ -77,6 +111,10 @@ int {\bfseries m\+\_\+n\+Msg\+Tail\+Len}
 \mbox{\tt in}  & {\em p\+Data} & 数据报头指针 \\
 \hline
 \end{DoxyParams}
+
+
+在文件 Datagram.\+cpp 第 27 行定义.
+
 \mbox{\Hypertarget{class_datagram_ad54ae1c5f2522a9d6ab2145bfa33e7e4}\label{class_datagram_ad54ae1c5f2522a9d6ab2145bfa33e7e4}} 
 \index{Datagram@{Datagram}!create\+Buf@{create\+Buf}}
 \index{create\+Buf@{create\+Buf}!Datagram@{Datagram}}
@@ -92,6 +130,34 @@ int {\bfseries m\+\_\+n\+Msg\+Tail\+Len}
 \mbox{\tt in}  & {\em datagram} & 上层数据报 \\
 \hline
 \end{DoxyParams}
+
+
+在文件 Datagram.\+cpp 第 5 行定义.
+
+\mbox{\Hypertarget{class_datagram_aac2187f8896acdd5dc5424b8934d454a}\label{class_datagram_aac2187f8896acdd5dc5424b8934d454a}} 
+\index{Datagram@{Datagram}!get\+Id@{get\+Id}}
+\index{get\+Id@{get\+Id}!Datagram@{Datagram}}
+\subsubsection{\texorpdfstring{get\+Id()}{getId()}}
+{\footnotesize\ttfamily int Datagram\+::get\+Id (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+在文件 Datagram.\+cpp 第 31 行定义.
+
+\mbox{\Hypertarget{class_datagram_ab3912f9748416eac75309fae598017c8}\label{class_datagram_ab3912f9748416eac75309fae598017c8}} 
+\index{Datagram@{Datagram}!release@{release}}
+\index{release@{release}!Datagram@{Datagram}}
+\subsubsection{\texorpdfstring{release()}{release()}}
+{\footnotesize\ttfamily void Datagram\+::release (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+数据报的释放 
+
+
+
+在文件 Datagram.\+cpp 第 22 行定义.
+
 \mbox{\Hypertarget{class_datagram_a92f5c858fa5f872bc7576346b932f77a}\label{class_datagram_a92f5c858fa5f872bc7576346b932f77a}} 
 \index{Datagram@{Datagram}!rmv\+Head\+Buf@{rmv\+Head\+Buf}}
 \index{rmv\+Head\+Buf@{rmv\+Head\+Buf}!Datagram@{Datagram}}
@@ -107,7 +173,84 @@ int {\bfseries m\+\_\+n\+Msg\+Tail\+Len}
 \end{DoxyAttention}
 
 
+在文件 Datagram.\+cpp 第 16 行定义.
+
+\mbox{\Hypertarget{class_datagram_a396a4dba1b8d973ce0d8951ca885872c}\label{class_datagram_a396a4dba1b8d973ce0d8951ca885872c}} 
+\index{Datagram@{Datagram}!set\+Id@{set\+Id}}
+\index{set\+Id@{set\+Id}!Datagram@{Datagram}}
+\subsubsection{\texorpdfstring{set\+Id()}{setId()}}
+{\footnotesize\ttfamily void Datagram\+::set\+Id (\begin{DoxyParamCaption}\item[{int}]{id }\end{DoxyParamCaption})}
+
+
+
+在文件 Datagram.\+cpp 第 36 行定义.
+
+
+
+\subsection{类成员变量说明}
+\mbox{\Hypertarget{class_datagram_aab7f89c5363d398b03ae8f8709e3e8c6}\label{class_datagram_aab7f89c5363d398b03ae8f8709e3e8c6}} 
+\index{Datagram@{Datagram}!m\+\_\+n\+Meg\+Len@{m\+\_\+n\+Meg\+Len}}
+\index{m\+\_\+n\+Meg\+Len@{m\+\_\+n\+Meg\+Len}!Datagram@{Datagram}}
+\subsubsection{\texorpdfstring{m\+\_\+n\+Meg\+Len}{m\_nMegLen}}
+{\footnotesize\ttfamily int Datagram\+::m\+\_\+n\+Meg\+Len}
+
+报文总长度 
+
+在文件 Datagram.\+h 第 27 行定义.
+
+\mbox{\Hypertarget{class_datagram_afeb0a8abee7a260fc81f2cdf8978e0b2}\label{class_datagram_afeb0a8abee7a260fc81f2cdf8978e0b2}} 
+\index{Datagram@{Datagram}!m\+\_\+n\+Msg\+Head\+Len@{m\+\_\+n\+Msg\+Head\+Len}}
+\index{m\+\_\+n\+Msg\+Head\+Len@{m\+\_\+n\+Msg\+Head\+Len}!Datagram@{Datagram}}
+\subsubsection{\texorpdfstring{m\+\_\+n\+Msg\+Head\+Len}{m\_nMsgHeadLen}}
+{\footnotesize\ttfamily int Datagram\+::m\+\_\+n\+Msg\+Head\+Len}
+
+报文头长度 
+
+在文件 Datagram.\+h 第 28 行定义.
+
+\mbox{\Hypertarget{class_datagram_aaa9c1b32f5fb0414778af41cc01a6b9f}\label{class_datagram_aaa9c1b32f5fb0414778af41cc01a6b9f}} 
+\index{Datagram@{Datagram}!m\+\_\+n\+Msg\+Tail\+Len@{m\+\_\+n\+Msg\+Tail\+Len}}
+\index{m\+\_\+n\+Msg\+Tail\+Len@{m\+\_\+n\+Msg\+Tail\+Len}!Datagram@{Datagram}}
+\subsubsection{\texorpdfstring{m\+\_\+n\+Msg\+Tail\+Len}{m\_nMsgTailLen}}
+{\footnotesize\ttfamily int Datagram\+::m\+\_\+n\+Msg\+Tail\+Len}
+
+报文尾长度 
+
+在文件 Datagram.\+h 第 29 行定义.
+
+\mbox{\Hypertarget{class_datagram_a50bba5269b8d107e9be3147f28a9229c}\label{class_datagram_a50bba5269b8d107e9be3147f28a9229c}} 
+\index{Datagram@{Datagram}!p\+Data@{p\+Data}}
+\index{p\+Data@{p\+Data}!Datagram@{Datagram}}
+\subsubsection{\texorpdfstring{p\+Data}{pData}}
+{\footnotesize\ttfamily char$\ast$ Datagram\+::p\+Data}
+
+报文数据指针 
+
+在文件 Datagram.\+h 第 25 行定义.
+
+\mbox{\Hypertarget{class_datagram_ac71eedd18cac5107f545043abd2d2655}\label{class_datagram_ac71eedd18cac5107f545043abd2d2655}} 
+\index{Datagram@{Datagram}!p\+Head@{p\+Head}}
+\index{p\+Head@{p\+Head}!Datagram@{Datagram}}
+\subsubsection{\texorpdfstring{p\+Head}{pHead}}
+{\footnotesize\ttfamily char$\ast$ Datagram\+::p\+Head}
+
+报文头指针 
+
+在文件 Datagram.\+h 第 24 行定义.
+
+\mbox{\Hypertarget{class_datagram_af4d0826f99eb27b443a48ddc21e6815f}\label{class_datagram_af4d0826f99eb27b443a48ddc21e6815f}} 
+\index{Datagram@{Datagram}!p\+Tail@{p\+Tail}}
+\index{p\+Tail@{p\+Tail}!Datagram@{Datagram}}
+\subsubsection{\texorpdfstring{p\+Tail}{pTail}}
+{\footnotesize\ttfamily char$\ast$ Datagram\+::p\+Tail}
+
+报文尾指针 
+
+在文件 Datagram.\+h 第 26 行定义.
+
+
+
 该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
 \item 
-G\+:/华中科技大学/计卓1401/大三下/计算机网络/\+Layer\+Interface/\+Layer\+Interface/Datagram.\+h\item 
-G\+:/华中科技大学/计卓1401/大三下/计算机网络/\+Layer\+Interface/\+Layer\+Interface/Datagram.\+cpp\end{DoxyCompactItemize}
+G\+:/华中科技大学/计卓1401/大三下/计算机网络/\+Layer\+Interface/\+Layer\+Interface/\hyperlink{_datagram_8h}{Datagram.\+h}\item 
+G\+:/华中科技大学/计卓1401/大三下/计算机网络/\+Layer\+Interface/\+Layer\+Interface/\hyperlink{_datagram_8cpp}{Datagram.\+cpp}\end{DoxyCompactItemize}

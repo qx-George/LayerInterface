@@ -1,0 +1,89 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Internet Protocol Stack: G:/华中科技大学/计卓1401/大三下/计算机网络/LayerInterface/TCPLayer/LinkRegister.cpp 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Internet Protocol Stack
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_f1a073ba2cf6ca9bb5fe777c4f3439f6.html">TCPLayer</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">LinkRegister.cpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_link_register_8cpp.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_t_c_p_layer_2stdafx_8h.html">stdafx.h</a>&quot;</span></div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_link_register_8h.html">LinkRegister.h</a>&quot;</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &lt;algorithm&gt;</span></div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;</div><div class="line"><a name="l00005"></a><span class="lineno"><a class="line" href="class_link_register.html#a0bfea076828afd624b1f04c2e68b0ad8">    5</a></span>&#160;<a class="code" href="class_link_register.html#a0bfea076828afd624b1f04c2e68b0ad8">LinkRegister::LinkRegister</a>()</div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;{</div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;    cur = reg.begin();</div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;}</div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;</div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;</div><div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="class_link_register.html#a0e78844a8ababa2284571a62e421871f">   11</a></span>&#160;<a class="code" href="class_link_register.html#a0e78844a8ababa2284571a62e421871f">LinkRegister::~LinkRegister</a>()</div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;{</div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;}</div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;</div><div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="class_link_register.html#a5770b48622c38dadecca356406b6ed47">   15</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="class_link_register.html#a5770b48622c38dadecca356406b6ed47">LinkRegister::isEmpty</a>() {</div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <span class="keywordflow">return</span> reg.empty();</div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;}</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div><div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="class_link_register.html#a1af4133a7b637815860d3efb4e84d3f3">   19</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_link_register.html#a1af4133a7b637815860d3efb4e84d3f3">LinkRegister::clear</a>() {</div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    reg.clear();</div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;}</div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;</div><div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="class_link_register.html#aac227d321f4fed2ebd7b661eb554604b">   23</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_link_register.html#aac227d321f4fed2ebd7b661eb554604b">LinkRegister::reset</a>() {</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    cur = reg.begin();</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;}</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div><div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="class_link_register.html#a937e313ea63312bd9636c978554e180c">   27</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_link_register.html#a937e313ea63312bd9636c978554e180c">LinkRegister::insert</a>(<a class="code" href="class_tuple.html">Tuple</a> tuple) {</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    reg.push_back(tuple);</div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;}</div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div><div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="class_link_register.html#ac894e7263eeeeb67bc6cfa8f37c18713">   31</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="class_link_register.html#ac894e7263eeeeb67bc6cfa8f37c18713">LinkRegister::remove</a>() {</div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keywordflow">if</span> (cur == reg.end())</div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    cur = reg.erase(cur);</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;}</div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div><div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="class_link_register.html#a43763a33de2304f53bfd11e7d3e90491">   38</a></span>&#160;LinkRegister::Pointer <a class="code" href="class_link_register.html#a43763a33de2304f53bfd11e7d3e90491">LinkRegister::next</a>() {</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keywordflow">if</span> (reg.empty())</div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        <span class="keywordflow">return</span> cur;</div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keywordflow">if</span> (cur == reg.end())</div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        <a class="code" href="class_link_register.html#aac227d321f4fed2ebd7b661eb554604b">reset</a>();</div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keywordflow">return</span> cur++;</div><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;}</div><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div><div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="class_link_register.html#abe4840e598dc18dee95cd979513160aa">   46</a></span>&#160;LinkRegister::Pointer <a class="code" href="class_link_register.html#abe4840e598dc18dee95cd979513160aa">LinkRegister::find</a>(std::string IP, <span class="keywordtype">int</span> port) {</div><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keyword">auto</span> itr = std::find_if(reg.begin(), reg.end(),</div><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        [IP, port](<span class="keyword">const</span> <a class="code" href="class_tuple.html">Tuple</a> &amp;p) { </div><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        <span class="keywordflow">if</span> (p.IPAdress == IP &amp;&amp; p.port == port) </div><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">true</span>; </div><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>; });</div><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keywordflow">return</span> itr;</div><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;}</div><div class="ttc" id="class_link_register_html_a5770b48622c38dadecca356406b6ed47"><div class="ttname"><a href="class_link_register.html#a5770b48622c38dadecca356406b6ed47">LinkRegister::isEmpty</a></div><div class="ttdeci">bool isEmpty()</div><div class="ttdef"><b>Definition:</b> <a href="_link_register_8cpp_source.html#l00015">LinkRegister.cpp:15</a></div></div>
+<div class="ttc" id="class_tuple_html"><div class="ttname"><a href="class_tuple.html">Tuple</a></div><div class="ttdef"><b>Definition:</b> <a href="_link_register_8h_source.html#l00026">LinkRegister.h:26</a></div></div>
+<div class="ttc" id="class_link_register_html_a937e313ea63312bd9636c978554e180c"><div class="ttname"><a href="class_link_register.html#a937e313ea63312bd9636c978554e180c">LinkRegister::insert</a></div><div class="ttdeci">void insert(Tuple tuple)</div><div class="ttdef"><b>Definition:</b> <a href="_link_register_8cpp_source.html#l00027">LinkRegister.cpp:27</a></div></div>
+<div class="ttc" id="class_link_register_html_a0e78844a8ababa2284571a62e421871f"><div class="ttname"><a href="class_link_register.html#a0e78844a8ababa2284571a62e421871f">LinkRegister::~LinkRegister</a></div><div class="ttdeci">~LinkRegister()</div><div class="ttdef"><b>Definition:</b> <a href="_link_register_8cpp_source.html#l00011">LinkRegister.cpp:11</a></div></div>
+<div class="ttc" id="class_link_register_html_a0bfea076828afd624b1f04c2e68b0ad8"><div class="ttname"><a href="class_link_register.html#a0bfea076828afd624b1f04c2e68b0ad8">LinkRegister::LinkRegister</a></div><div class="ttdeci">LinkRegister()</div><div class="ttdef"><b>Definition:</b> <a href="_link_register_8cpp_source.html#l00005">LinkRegister.cpp:5</a></div></div>
+<div class="ttc" id="class_link_register_html_a1af4133a7b637815860d3efb4e84d3f3"><div class="ttname"><a href="class_link_register.html#a1af4133a7b637815860d3efb4e84d3f3">LinkRegister::clear</a></div><div class="ttdeci">void clear()</div><div class="ttdef"><b>Definition:</b> <a href="_link_register_8cpp_source.html#l00019">LinkRegister.cpp:19</a></div></div>
+<div class="ttc" id="_t_c_p_layer_2stdafx_8h_html"><div class="ttname"><a href="_t_c_p_layer_2stdafx_8h.html">stdafx.h</a></div></div>
+<div class="ttc" id="class_link_register_html_a43763a33de2304f53bfd11e7d3e90491"><div class="ttname"><a href="class_link_register.html#a43763a33de2304f53bfd11e7d3e90491">LinkRegister::next</a></div><div class="ttdeci">Pointer next()</div><div class="ttdef"><b>Definition:</b> <a href="_link_register_8cpp_source.html#l00038">LinkRegister.cpp:38</a></div></div>
+<div class="ttc" id="class_link_register_html_abe4840e598dc18dee95cd979513160aa"><div class="ttname"><a href="class_link_register.html#abe4840e598dc18dee95cd979513160aa">LinkRegister::find</a></div><div class="ttdeci">Pointer find(std::string IPAddress, int port)</div><div class="ttdef"><b>Definition:</b> <a href="_link_register_8cpp_source.html#l00046">LinkRegister.cpp:46</a></div></div>
+<div class="ttc" id="class_link_register_html_ac894e7263eeeeb67bc6cfa8f37c18713"><div class="ttname"><a href="class_link_register.html#ac894e7263eeeeb67bc6cfa8f37c18713">LinkRegister::remove</a></div><div class="ttdeci">bool remove()</div><div class="ttdef"><b>Definition:</b> <a href="_link_register_8cpp_source.html#l00031">LinkRegister.cpp:31</a></div></div>
+<div class="ttc" id="class_link_register_html_aac227d321f4fed2ebd7b661eb554604b"><div class="ttname"><a href="class_link_register.html#aac227d321f4fed2ebd7b661eb554604b">LinkRegister::reset</a></div><div class="ttdeci">void reset()</div><div class="ttdef"><b>Definition:</b> <a href="_link_register_8cpp_source.html#l00023">LinkRegister.cpp:23</a></div></div>
+<div class="ttc" id="_link_register_8h_html"><div class="ttname"><a href="_link_register_8h.html">LinkRegister.h</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

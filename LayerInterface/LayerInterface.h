@@ -15,12 +15,20 @@
 //===================================================================================
 #include "Datagram.h"
 #include "LayerBuffer.h"
+
+  /**
+   * @author: Xiong_Joe
+   * @date: 2017/4/28
+   * @brief: 这个类是总的基类，将每个层都抽象成既可以从上面接收数据，
+   * 将数据封装（打包）后又可以往下面发送数据的层；同时也要从下层接收数据，
+   * 将数据解封装，然后又往上发送的层。
+   */
 class CNetConn;
 // This class is exported from the LayerInterface.dll
 class LAYERINTERFACE_API CLayerInterface {
 public:
 	CLayerInterface();
-	CLayerInterface(MsgList &td, MsgList &dt);
+	CLayerInterface(MsgList &td, MsgList &dt);  /**< 重载构造函数 */
 	virtual ~CLayerInterface();
 
 	bool init();
@@ -28,9 +36,9 @@ public:
 	void stopRun();
 	static DWORD WINAPI layerThread(LPVOID lpParam);
 	void layerControl();
-	virtual bool isBufferReady(int lable);			//check if the buffer can be used
-	virtual Datagram getData(int lable);			//get data from the buffer
-	virtual bool sendData(Datagram data);			//insert the data into buffer
+	virtual bool isBufferReady(int lable);			/**< check if the buffer can be used */
+	virtual Datagram getData(int lable);			/**< get data from the buffer */
+	virtual bool sendData(Datagram data);			/**< insert the data into buffer */
 	virtual bool recvData(Datagram data);
 	void setHeadTailLen(int iMsgHeadLen, int iMsgTailLen);
 	// CNetConn *conn;
@@ -45,25 +53,25 @@ protected:
 
 
 protected:
-	enum { SERVER = 0, CLIENT };			//sent_layer:client   recieve_layer:server
+	enum { SERVER = 0, CLIENT };	/**< sent_layer:client   recieve_layer:server */
 	bool bStop;
 	CLayerInterface *pServerLayer;
-	bool bHasServerLayer;
+	bool bHasServerLayer;        /**< 该层下面是否还有层 */
 	Datagram *m_pDatagram;
 
 	int m_nMsgHeadLen;
 	int m_nMsgTailLen;
 
 	//These buffers used by this layer and lower layer
-	MsgList mySendBuf;			//top->down buffer
-	MsgList myRecvBuf;			//down->top buffer
+	MsgList mySendBuf;			/**< top->down buffer */
+	MsgList myRecvBuf;			/**< down->top buffer */ 
 	//inherite from the upper layer
-	MsgList &m_pClientSendBuf;
-	MsgList &m_pClientRcvBuf;
+	MsgList &m_pClientSendBuf;  /**< 指向上层发送缓冲区的指针，用来从上层缓冲区取出数据 */
+	MsgList &m_pClientRcvBuf;   /**< 指向上层接收缓冲区的指针，用来向上层缓冲区发送数据 */
 	HANDLE hThread;
 	
 	enum m_ServProtoType
 	{
 		TCP, UDP, IP
-	};				// 用于标记下层生成的协议类型
+	};				/**< 用于标记下层生成的协议类型 */
 };

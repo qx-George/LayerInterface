@@ -60,32 +60,136 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#pub-types">Public 类型</a> &#124;
+<a href="#pub-methods">Public 成员函数</a> &#124;
 <a href="#pub-attribs">Public 属性</a> &#124;
 <a href="class_c_socket_conn-members.html">所有成员列表</a>  </div>
   <div class="headertitle">
 <div class="title">CSocketConn类 参考</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p><code>#include &lt;<a class="el" href="_socket_conn_8h_source.html">SocketConn.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public 类型</h2></td></tr>
-<tr class="memitem:aff511342b5990495abcfb3319889a10f"><td class="memItemLeft" align="right" valign="top"><a id="aff511342b5990495abcfb3319889a10f"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>SocketState</b> { <b>CREATED</b> = 0, 
-<b>CONNECT</b> = 1
+<tr class="memitem:aff511342b5990495abcfb3319889a10f"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_socket_conn.html#aff511342b5990495abcfb3319889a10f">SocketState</a> { <a class="el" href="class_c_socket_conn.html#aff511342b5990495abcfb3319889a10fa0be23b9ad265b5f4fb1b79fd455b4462">CREATED</a> = 0, 
+<a class="el" href="class_c_socket_conn.html#aff511342b5990495abcfb3319889a10fae95a8269b423b7d2ac6a7820ef91cdd3">CONNECT</a> = 1
  }</td></tr>
 <tr class="separator:aff511342b5990495abcfb3319889a10f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:aa9e7dc944c5024fbd8ab3d702064a932"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_socket_conn.html#aa9e7dc944c5024fbd8ab3d702064a932">CSocketConn</a> ()</td></tr>
+<tr class="separator:aa9e7dc944c5024fbd8ab3d702064a932"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ece15744485f06506faaabd3bc6f6a6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_socket_conn.html#a4ece15744485f06506faaabd3bc6f6a6">~CSocketConn</a> ()</td></tr>
+<tr class="separator:a4ece15744485f06506faaabd3bc6f6a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public 属性</h2></td></tr>
-<tr class="memitem:a07e98f72e33f3bf788545c1446c5aaeb"><td class="memItemLeft" align="right" valign="top"><a id="a07e98f72e33f3bf788545c1446c5aaeb"></a>
-<a class="el" href="class_c_net_conn.html">CNetConn</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>conn</b></td></tr>
+<tr class="memitem:a07e98f72e33f3bf788545c1446c5aaeb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_c_net_conn.html">CNetConn</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_socket_conn.html#a07e98f72e33f3bf788545c1446c5aaeb">conn</a></td></tr>
 <tr class="separator:a07e98f72e33f3bf788545c1446c5aaeb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3071170de60991704e2f9a958bfa0b13"><td class="memItemLeft" align="right" valign="top"><a id="a3071170de60991704e2f9a958bfa0b13"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>state</b></td></tr>
+<tr class="memitem:a3071170de60991704e2f9a958bfa0b13"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_socket_conn.html#a3071170de60991704e2f9a958bfa0b13">state</a></td></tr>
 <tr class="separator:a3071170de60991704e2f9a958bfa0b13"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock">
+<p class="definition">在文件 <a class="el" href="_socket_conn_8h_source.html">SocketConn.h</a> 第 <a class="el" href="_socket_conn_8h_source.html#l00003">3</a> 行定义.</p>
+</div><h2 class="groupheader">成员枚举类型说明</h2>
+<a id="aff511342b5990495abcfb3319889a10f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aff511342b5990495abcfb3319889a10f">&#9670;&nbsp;</a></span>SocketState</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="class_c_socket_conn.html#aff511342b5990495abcfb3319889a10f">CSocketConn::SocketState</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">枚举值</th></tr><tr><td class="fieldname"><a id="aff511342b5990495abcfb3319889a10fa0be23b9ad265b5f4fb1b79fd455b4462"></a>CREATED&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="aff511342b5990495abcfb3319889a10fae95a8269b423b7d2ac6a7820ef91cdd3"></a>CONNECT&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+<p class="definition">在文件 <a class="el" href="_socket_conn_8h_source.html">SocketConn.h</a> 第 <a class="el" href="_socket_conn_8h_source.html#l00012">12</a> 行定义.</p>
+
+</div>
+</div>
+<h2 class="groupheader">构造及析构函数说明</h2>
+<a id="aa9e7dc944c5024fbd8ab3d702064a932"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa9e7dc944c5024fbd8ab3d702064a932">&#9670;&nbsp;</a></span>CSocketConn()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">CSocketConn::CSocketConn </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_socket_conn_8cpp_source.html">SocketConn.cpp</a> 第 <a class="el" href="_socket_conn_8cpp_source.html#l00005">5</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a4ece15744485f06506faaabd3bc6f6a6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4ece15744485f06506faaabd3bc6f6a6">&#9670;&nbsp;</a></span>~CSocketConn()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">CSocketConn::~CSocketConn </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_socket_conn_8cpp_source.html">SocketConn.cpp</a> 第 <a class="el" href="_socket_conn_8cpp_source.html#l00010">10</a> 行定义.</p>
+
+</div>
+</div>
+<h2 class="groupheader">类成员变量说明</h2>
+<a id="a07e98f72e33f3bf788545c1446c5aaeb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a07e98f72e33f3bf788545c1446c5aaeb">&#9670;&nbsp;</a></span>conn</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_c_net_conn.html">CNetConn</a>* CSocketConn::conn</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_socket_conn_8h_source.html">SocketConn.h</a> 第 <a class="el" href="_socket_conn_8h_source.html#l00009">9</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a3071170de60991704e2f9a958bfa0b13"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3071170de60991704e2f9a958bfa0b13">&#9670;&nbsp;</a></span>state</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int CSocketConn::state</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_socket_conn_8h_source.html">SocketConn.h</a> 第 <a class="el" href="_socket_conn_8h_source.html#l00010">10</a> 行定义.</p>
+
+</div>
+</div>
 <hr/>该类的文档由以下文件生成:<ul>
 <li>G:/华中科技大学/计卓1401/大三下/计算机网络/LayerInterface/Service/<a class="el" href="_socket_conn_8h_source.html">SocketConn.h</a></li>
-<li>G:/华中科技大学/计卓1401/大三下/计算机网络/LayerInterface/Service/SocketConn.cpp</li>
+<li>G:/华中科技大学/计卓1401/大三下/计算机网络/LayerInterface/Service/<a class="el" href="_socket_conn_8cpp_source.html">SocketConn.cpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

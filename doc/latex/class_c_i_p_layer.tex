@@ -1,5 +1,9 @@
 \hypertarget{class_c_i_p_layer}{}\section{C\+I\+P\+Layer类 参考}
 \label{class_c_i_p_layer}\index{C\+I\+P\+Layer@{C\+I\+P\+Layer}}
+
+
+{\ttfamily \#include $<$I\+P\+Layer.\+h$>$}
+
 类 C\+I\+P\+Layer 继承关系图\+:\begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -9,28 +13,90 @@
 \subsection*{Public 成员函数}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{class_c_i_p_layer_a29f18d33abf037633c2dce2ed727ca5e}\label{class_c_i_p_layer_a29f18d33abf037633c2dce2ed727ca5e}} 
-{\bfseries C\+I\+P\+Layer} (\hyperlink{class_msg_list}{Msg\+List} \&send\+Buf, \hyperlink{class_msg_list}{Msg\+List} \&rcv\+Buf)
+\hyperlink{class_c_i_p_layer_a29f18d33abf037633c2dce2ed727ca5e}{C\+I\+P\+Layer} (\hyperlink{class_msg_list}{Msg\+List} \&send\+Buf, \hyperlink{class_msg_list}{Msg\+List} \&rcv\+Buf)
 \item 
-\mbox{\Hypertarget{class_c_i_p_layer_afe758e9d359f9318a026ac89672b4b21}\label{class_c_i_p_layer_afe758e9d359f9318a026ac89672b4b21}} 
-void {\bfseries routing} ()
+\hyperlink{class_c_i_p_layer_a064dc4bd7137c3c1a509ff3b9f23765a}{$\sim$\+C\+I\+P\+Layer} ()
 \item 
-\mbox{\Hypertarget{class_c_i_p_layer_a85c7f675704b8605eb16e881abdcca1d}\label{class_c_i_p_layer_a85c7f675704b8605eb16e881abdcca1d}} 
-void {\bfseries fragment} ()
+void \hyperlink{class_c_i_p_layer_afe758e9d359f9318a026ac89672b4b21}{routing} ()
 \item 
-\mbox{\Hypertarget{class_c_i_p_layer_a68cfe267fa5138e11051d746540ae714}\label{class_c_i_p_layer_a68cfe267fa5138e11051d746540ae714}} 
-void {\bfseries reassemble} ()
+void \hyperlink{class_c_i_p_layer_a85c7f675704b8605eb16e881abdcca1d}{fragment} ()
+\item 
+void \hyperlink{class_c_i_p_layer_a68cfe267fa5138e11051d746540ae714}{reassemble} ()
 \end{DoxyCompactItemize}
 \subsection*{Protected 成员函数}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{class_c_i_p_layer_a4a73e335cc0801fe2a7f0de6ab955411}\label{class_c_i_p_layer_a4a73e335cc0801fe2a7f0de6ab955411}} 
-void {\bfseries add\+Head} ()
+void \hyperlink{class_c_i_p_layer_a4a73e335cc0801fe2a7f0de6ab955411}{add\+Head} ()
 \end{DoxyCompactItemize}
 \subsection*{额外继承的成员函数}
 
 
+\subsection{详细描述}
+
+
+在文件 I\+P\+Layer.\+h 第 13 行定义.
+
+
+
+\subsection{构造及析构函数说明}
+\mbox{\Hypertarget{class_c_i_p_layer_a29f18d33abf037633c2dce2ed727ca5e}\label{class_c_i_p_layer_a29f18d33abf037633c2dce2ed727ca5e}} 
+\index{C\+I\+P\+Layer@{C\+I\+P\+Layer}!C\+I\+P\+Layer@{C\+I\+P\+Layer}}
+\index{C\+I\+P\+Layer@{C\+I\+P\+Layer}!C\+I\+P\+Layer@{C\+I\+P\+Layer}}
+\subsubsection{\texorpdfstring{C\+I\+P\+Layer()}{CIPLayer()}}
+{\footnotesize\ttfamily C\+I\+P\+Layer\+::\+C\+I\+P\+Layer (\begin{DoxyParamCaption}\item[{\hyperlink{class_msg_list}{Msg\+List} \&}]{send\+Buf,  }\item[{\hyperlink{class_msg_list}{Msg\+List} \&}]{rcv\+Buf }\end{DoxyParamCaption})}
+
+
+
+在文件 I\+P\+Layer.\+cpp 第 10 行定义.
+
+\mbox{\Hypertarget{class_c_i_p_layer_a064dc4bd7137c3c1a509ff3b9f23765a}\label{class_c_i_p_layer_a064dc4bd7137c3c1a509ff3b9f23765a}} 
+\index{C\+I\+P\+Layer@{C\+I\+P\+Layer}!````~C\+I\+P\+Layer@{$\sim$\+C\+I\+P\+Layer}}
+\index{````~C\+I\+P\+Layer@{$\sim$\+C\+I\+P\+Layer}!C\+I\+P\+Layer@{C\+I\+P\+Layer}}
+\subsubsection{\texorpdfstring{$\sim$\+C\+I\+P\+Layer()}{~CIPLayer()}}
+{\footnotesize\ttfamily C\+I\+P\+Layer\+::$\sim$\+C\+I\+P\+Layer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+在文件 I\+P\+Layer.\+cpp 第 22 行定义.
+
+
+
+\subsection{成员函数说明}
+\mbox{\Hypertarget{class_c_i_p_layer_a4a73e335cc0801fe2a7f0de6ab955411}\label{class_c_i_p_layer_a4a73e335cc0801fe2a7f0de6ab955411}} 
+\index{C\+I\+P\+Layer@{C\+I\+P\+Layer}!add\+Head@{add\+Head}}
+\index{add\+Head@{add\+Head}!C\+I\+P\+Layer@{C\+I\+P\+Layer}}
+\subsubsection{\texorpdfstring{add\+Head()}{addHead()}}
+{\footnotesize\ttfamily void C\+I\+P\+Layer\+::add\+Head (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+重载 \hyperlink{class_c_layer_interface_ac38c51660960657ac42e37a19ea062b4}{C\+Layer\+Interface} .
+
+
+
+在文件 I\+P\+Layer.\+cpp 第 27 行定义.
+
+\mbox{\Hypertarget{class_c_i_p_layer_a85c7f675704b8605eb16e881abdcca1d}\label{class_c_i_p_layer_a85c7f675704b8605eb16e881abdcca1d}} 
+\index{C\+I\+P\+Layer@{C\+I\+P\+Layer}!fragment@{fragment}}
+\index{fragment@{fragment}!C\+I\+P\+Layer@{C\+I\+P\+Layer}}
+\subsubsection{\texorpdfstring{fragment()}{fragment()}}
+{\footnotesize\ttfamily void C\+I\+P\+Layer\+::fragment (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_i_p_layer_a68cfe267fa5138e11051d746540ae714}\label{class_c_i_p_layer_a68cfe267fa5138e11051d746540ae714}} 
+\index{C\+I\+P\+Layer@{C\+I\+P\+Layer}!reassemble@{reassemble}}
+\index{reassemble@{reassemble}!C\+I\+P\+Layer@{C\+I\+P\+Layer}}
+\subsubsection{\texorpdfstring{reassemble()}{reassemble()}}
+{\footnotesize\ttfamily void C\+I\+P\+Layer\+::reassemble (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_i_p_layer_afe758e9d359f9318a026ac89672b4b21}\label{class_c_i_p_layer_afe758e9d359f9318a026ac89672b4b21}} 
+\index{C\+I\+P\+Layer@{C\+I\+P\+Layer}!routing@{routing}}
+\index{routing@{routing}!C\+I\+P\+Layer@{C\+I\+P\+Layer}}
+\subsubsection{\texorpdfstring{routing()}{routing()}}
+{\footnotesize\ttfamily void C\+I\+P\+Layer\+::routing (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
 该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
 \item 
-G\+:/华中科技大学/计卓1401/大三下/计算机网络/\+Layer\+Interface/\+I\+P\+Layer/I\+P\+Layer.\+h\item 
-G\+:/华中科技大学/计卓1401/大三下/计算机网络/\+Layer\+Interface/\+I\+P\+Layer/I\+P\+Layer.\+cpp\end{DoxyCompactItemize}
+G\+:/华中科技大学/计卓1401/大三下/计算机网络/\+Layer\+Interface/\+I\+P\+Layer/\hyperlink{_i_p_layer_8h}{I\+P\+Layer.\+h}\item 
+G\+:/华中科技大学/计卓1401/大三下/计算机网络/\+Layer\+Interface/\+I\+P\+Layer/\hyperlink{_i_p_layer_8cpp}{I\+P\+Layer.\+cpp}\end{DoxyCompactItemize}
